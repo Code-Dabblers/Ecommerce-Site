@@ -19,7 +19,9 @@ PS: This was just to run the project on local machine, if you want to contribute
 
 ## <br /> Thank You All Contributing and Making The Source Open :stars:.
 :tada: We did love to see more commits and raised issues by you all :tada:.
-:sparkles: To Contribute check the Contribute.md and start making your first PR and Commit's. :sparkles: :tada:
+:sparkles: 
+
+To Contribute check the [Contribute.md](Contribution.md) and start making your first PR and Commit's. :sparkles: :tada:
 <table>
     <tr>
         <td align="center">
@@ -31,4 +33,3 @@ PS: This was just to run the project on local machine, if you want to contribute
         </td>
     </tr>
 </table>
-

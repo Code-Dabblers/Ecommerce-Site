@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-site",
+  "version": "1.0.0",
+  "description": "A simple e-commerce site build using HTML, CSS, and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Dabblers/Ecommerce-Site.git"
+  },
+  "author": "Code Dabblers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Dabblers/Ecommerce-Site/issues"
+  },
+  "homepage": "https://github.com/Code-Dabblers/Ecommerce-Site#readme"
+}

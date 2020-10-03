@@ -40,3 +40,24 @@ PS: This was just to run the project on local machine, if you want to contribute
     </td></tr>
 </table>
 <!-- readme: contributors -end -->
+## <br /> Thank You All Contributing and Making The Source Open :stars:.
+:tada: We did love to see more commits and raised issues by you all :tada:.
+:sparkles: To Contribute check the Contribute.md and start making your first PR and Commit's. :sparkles: :tada:
+<table>
+<tr>
+                <td align="center">
+                    <a href="https://github.com/fabcodingzest">
+                        <img src="https://avatars1.githubusercontent.com/u/48706652?v=4" width="100;" alt="fabcodingzest"/>
+                        <br />
+                        <sub><b>Fab</b></sub>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://github.com/muchirijane">
+                        <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+                        <br />
+                        <sub><b>Jane Tracy Muthoni</b></sub>
+                    </a>
+                </td></tr>
+</table>
+

@@ -21,31 +21,6 @@ This is an open source project so feel free to contribute. Follow the guidelines
 1. Work on your code in that branch.
 1. Test the changes in your system.
 1. Create your PR into the Develop branch (not main branch) with the following steps.
-    * `git add .`
-    * `git commit -m "your commit message"
-    * Before you push the commit make sure to pull the changes in remote branch using `git pull o# CONTRIBUTION
-
-This is an open-source project so feel free to contribute. Follow the guidelines for submitting a PR.
-
-## Ways of Contributing
-
-#### You can contribute to the project by:
-* Adding feature
-* reporting bugs
-* solving issues
-* improving code quality
-* Improving documentation
-
-### To keep in line with this workflow, your process for submitting a PR should follow the steps below.
-
-1. Fork the repo and clone the forked repo on your local development environment.
-1. Create a branch using
-    * `git checkout -b feature/<feature-name>`
-    * `git checkout -b bug/<bug-name>`
-1. Name the branch in a concise way that eludes to what it does (e.g.: feature/add-navbar)
-1. Work on your code in that branch.
-1. Test the changes in your system.
-1. Create your PR into the Develop branch (not main branch) with the following steps.
     * Stage all the changes using - `git add .`
     * Commit the staged changes using - `git commit -m "your commit message"`. Make sure to write meaningful commit messages.
     * Before you push the commit make sure to pull the changes in the remote branch using `git pull origin develop`, in case of conflicts, please resolve them.

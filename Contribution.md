@@ -2,7 +2,7 @@
 
 This is an open source project so feel free to contribute. Follow the guidelines of submitting a PR.
 
-### Ways of Contributing
+## Ways of Contributing
 
 #### You can contribute to the project by:
 * Adding feature
@@ -29,6 +29,6 @@ This is an open source project so feel free to contribute. Follow the guidelines
 1. Write the Issue Number in the description if the pull request is related to some issue.
 1. Leave a short message in the PR explaining in slightly more detail what the PR accomplishes.
 1. If your PR touches multiple parts, consider adding a bullet list of accomplishments.
-1. Congratulations, you've successfully made a PR, now wait for your code to be reviewed and merged.
+1. Congratulations, you've successfully made a PR, now wait for your PR to be reviewed and merged.
 
 ## Thank you so much for contributing to this project, don't forget to star :star2: the repo. :smiley:

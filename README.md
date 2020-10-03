@@ -30,6 +30,13 @@ PS: This was just to run the project on local machine, if you want to contribute
             <br />
             <sub><b>Fab</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/muchirijane">
+            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+            <br />
+            <sub><b>Jane Tracy Muthoni</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: contributors -end -->

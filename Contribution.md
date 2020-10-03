@@ -14,7 +14,7 @@ This is an open source project so feel free to contribute. Follow the guidelines
 ### To keep in line with this workflow, your process for submitting a PR should follow the steps below.
 
 1. Fork the repo and clone the forked repo on your local development environment.
-1. Create a branch named `develop`  using `git checkout -b develop` and under that branch create the branch for feature/bug/improvement etc. using
+1. Create a branch using
     * `git checkout -b feature/<feature-name>`
     * `git checkout -b bug/<bug-name>`
 1. Name the branch in a concise way that eludes to what it does (e.g.: feature/add-navbar)

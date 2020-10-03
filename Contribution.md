@@ -56,14 +56,3 @@ This is an open-source project so feel free to contribute. Follow the guidelines
 1. Leave a short message in the PR explaining in slightly more detail what the PR accomplishes.
 1. If your PR touches multiple parts, consider adding a bullet list of accomplishments.
 1. Congratulations, you've successfully made a PR, now wait for your PR to be reviewed and merged.
-
-## Thank you so much for contributing to this project, don't forget to star :star2: the repo. :smiley:rigin develop`, in case of conflicts, please resolve them.
-    * After pulling the changes, push the all the changes using `git push origin branch-name`
-1. Go to [Repository](https://github.com/Code-Dabblers/Ecommerce-Site/blob/main/Contribution.md).
-1. Create a Pull Request against `develop` branch, make sure you don't make PR against `main` branch.
-1. Write the Issue Number in the description if the pull request is related to some issue.
-1. Leave a short message in the PR explaining in slightly more detail what the PR accomplishes.
-1. If your PR touches multiple parts, consider adding a bullet list of accomplishments.
-1. Congratulations, you've successfully made a PR, now wait for your PR to be reviewed and merged.
-
-## Thank you so much for contributing to this project, don't forget to star :star2: the repo. :smiley:

@@ -6,18 +6,20 @@ This E-Commerce site is made with HTML, CSS(SCSS). and JavaScript as front-end a
 
 To run this project in your local environment follow the steps below:-
 
-1. Download or clone the repository using - 
-
-`git clone https://github.com/Code-Dabblers/Ecommerce-Site.git`
+1. Download or clone the repository.
 
 2. Run `npm i` to install all the dependencies, if you're using VScode then extensions like eslint and prettier will come in handy.
 
+3. Run `npm run start` in the terminal to launch the live server.
+
 And you are good to go!
 
-PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md).
+PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contributing.md).
+
+**Feel free to contribute to the project by creating an issue and please make sure to follow the [Contribution Guidelines](Contributing.md)**
 
 
-## Thank You All Contributing.
+## Thank You All Contributing :relaxed:.
 
 <!-- readme: contributors -start --> 
 <table>

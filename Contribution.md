@@ -50,7 +50,7 @@ This is an open-source project so feel free to contribute. Follow the guidelines
     * Commit the staged changes using - `git commit -m "your commit message"`. Make sure to write meaningful commit messages.
     * Before you push the commit make sure to pull the changes in the remote branch using `git pull origin develop`, in case of conflicts, please resolve them.
     * After pulling the changes, push the all the changes using `git push origin branch-name`
-1. Go to [Repository](https://github.com/Code-Dabblers/Ecommerce-Site/blob/main/Contribution.md).
+1. Go to [Repository](https://github.com/Code-Dabblers/Ecommerce-Site).
 1. Create a Pull Request against the `develop` branch, make sure you don't make PR against the `main` branch.
 1. Write the Issue Number in the description if the pull request is related to some issue.
 1. Leave a short message in the PR explaining in slightly more detail what the PR accomplishes.

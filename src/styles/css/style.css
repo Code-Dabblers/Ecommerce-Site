@@ -30,3 +30,8 @@ body {
   .header__link {
     font-size: 1.6rem;
     text-transform: uppercase; }
+
+.random {
+  text-align: center;
+  padding: 2rem;
+  background: lightpink; }

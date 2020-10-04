@@ -16,10 +16,10 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__link">My profile</a>
+            <a href="/products" data-navigo class="header__link">My profile</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Wishlist</a>
+            <a href="/" data-navigo class="header__link">Wishlist</a>
           </li>
           <li class="header__item">
             <a href="#" class="header__link">Shopping cart</a>
@@ -27,7 +27,10 @@
         </ul>
       </nav>
     </header>
+    <main id="router"></main>
 
-    <script src="src/JavaScript/index.js"></script>
+    <!-- Navigo script -->
+    <script src="https://unpkg.com/navigo@6"></script>
+    <script type="module" src="src/JavaScript/index.js"></script>
   </body>
 </html>

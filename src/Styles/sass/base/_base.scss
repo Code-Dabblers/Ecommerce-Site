@@ -8,11 +8,12 @@
   text-decoration: none;
 }
 
-
 html {
-  font-size: 62.5%;
+  font-size: 70%;
 }
 
 body {
   box-sizing: border-box;
+  padding: 2rem;
+  background-color: $background;
 }

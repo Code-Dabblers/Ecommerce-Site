@@ -1,0 +1,32 @@
+.header {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo-box {
+  }
+
+  &__logo {
+    font-size: 2rem;
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: block;
+    padding: 0.5rem 1rem;
+
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+}

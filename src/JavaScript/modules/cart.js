@@ -1,12 +1,12 @@
 import { html } from "../../../../node_modules/lit-html/lit-html.js";
 
-const homepage = () => {
+const cart = () => {
   return html`
     <div class="random">
-      <h1>Its home page</h1>
-      <h2>And this route is "/"</h2>
+      <h1>Its Cart Route</h1>
+      <h2>And this route is "/cart"</h2>
     </div>
   `;
 };
 
-export default homepage;
+export default cart;

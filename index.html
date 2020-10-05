@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/imgs/svgs/app-logo.svg"
+      type="image/svg+xml"
+    />
     <link rel="stylesheet" href="src/styles/css/style.css" />
     <title>E-Commerce site</title>
   </head>
@@ -16,19 +21,22 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="/products" data-navigo class="header__link">My profile</a>
+            <a href="/products/list" data-navigo class="header__link"
+              >Products</a
+            >
           </li>
           <li class="header__item">
-            <a href="/" data-navigo class="header__link">Wishlist</a>
+            <a href="/cart" data-navigo class="header__link">Shopping cart</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Shopping cart</a>
+            <a href="/products/search/Nike" data-navigo class="header__link">Search</a>
           </li>
         </ul>
       </nav>
     </header>
     <main id="router"></main>
 
+    <footer class="footer">&copy;Copyright 2020</footer>
     <!-- Navigo script -->
     <script src="https://unpkg.com/navigo@6"></script>
     <script type="module" src="src/JavaScript/index.js"></script>

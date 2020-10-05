@@ -23,7 +23,6 @@
   &__item {
     display: block;
     padding: 0.5rem 1rem;
-
   }
 
   &__link {
@@ -33,7 +32,16 @@
 }
 
 .random {
+  height: 83vh;
   text-align: center;
   padding: 2rem;
   background: $pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.random.blue {
+  background: lightblue;
 }

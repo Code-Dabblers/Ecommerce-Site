@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: $gray;
 
   &__logo-box {
   }
@@ -29,4 +30,10 @@
     font-size: 1.6rem;
     text-transform: uppercase;
   }
+}
+
+.random {
+  text-align: center;
+  padding: 2rem;
+  background: $pink;
 }

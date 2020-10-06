@@ -20,7 +20,7 @@ PS: This was just to run the project on local machine, if you want to contribute
 
 ## Thank You All Contributing :relaxed:.
 
-<!-- readme: contributors -start -->
+<!-- readme: contributors -start --> 
 <table>
 <tr>
     <td align="center">

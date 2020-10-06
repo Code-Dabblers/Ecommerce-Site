@@ -1,0 +1,19 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background: $light-purple;
+    color: $white;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  &--shadow {
+    box-shadow: 0 1rem 2rem rgba($light-purple, 40%);
+  }
+}

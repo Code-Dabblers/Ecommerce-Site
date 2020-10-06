@@ -1,8 +1,9 @@
-import { html, render } from "../../node_modules/lit-html/lit-html.js";
+import { html, render } from "/node_modules/lit-html/lit-html.js";
 import homepage from "./modules/homepage.js";
 import cart from "./modules/cart.js";
 import search from "./modules/search.js";
 import productList from "./modules/product-list.js";
+import productDetails from "./modules/product-details.js";
 
 var root = null;
 var useHash = true; // Defaults to: false
@@ -21,7 +22,8 @@ router
       render(search(params.query), document.getElementById("router"));
     },
     "/details/:item": function (params) {
-      console.log(`/deatils/:item route, item is ${params.item}`);
+      console.log(`/details/:item route, item is ${params.item}`);
+      render(productDetails(params.item), document.getElementById("router"));
     },
     "/cart": function () {
       console.log("/cart route");

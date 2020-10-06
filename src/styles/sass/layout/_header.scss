@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $gray;
+  background: lightgrey;
 
   &__logo-box {
   }
@@ -31,11 +31,12 @@
   }
 }
 
+// Temporary code
 .random {
   height: 83vh;
   text-align: center;
   padding: 2rem;
-  background: $pink;
+  background: pink;
   display: flex;
   justify-content: center;
   align-items: center;

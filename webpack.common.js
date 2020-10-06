@@ -1,4 +1,4 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+let HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/JavaScript/index.js",
@@ -21,7 +21,7 @@ module.exports = {
         },
       },
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         use: ["html-loader"],
       },
       {

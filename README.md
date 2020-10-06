@@ -10,7 +10,7 @@ To run this project in your local environment follow the steps below:-
 
 2. Run `npm i` to install all the dependencies, if you're using VScode then extensions like eslint and prettier will come in handy.
 
-3. Run `npm run start` in the terminal to launch the live server.
+3. Run `npm run dev` in the terminal to launch the live server.
 
 And you are good to go!
 
@@ -18,10 +18,9 @@ PS: This was just to run the project on local machine, if you want to contribute
 
 **Feel free to contribute to the project by creating an issue and please make sure to follow the [Contribution Guidelines](Contribution.md)**
 
-
 ## Thank You All Contributing :relaxed:.
 
-<!-- readme: contributors -start --> 
+<!-- readme: contributors -start -->
 <table>
 <tr>
     <td align="center">

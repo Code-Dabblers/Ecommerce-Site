@@ -1,4 +1,5 @@
-import { html, render } from "/node_modules/lit-html/lit-html.js";
+import '../styles/sass/main.scss'
+import { html, render } from "lit-html";
 import homepage from "./modules/homepage.js";
 import cart from "./modules/cart.js";
 import search from "./modules/search.js";

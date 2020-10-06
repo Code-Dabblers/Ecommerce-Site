@@ -2,7 +2,7 @@
 
 ### In our project, we use Sass along with the recommended file structure. It's important to follow a few basic guidelines in order to keep the source code well structured and maintainable.
 
-## There are 4 folders inside our [Sass folder](https://github.com/Code-Dabblers/Ecommerce-Site/tree/main/src/styles/sass):
+## There are 5 folders inside our [Sass folder](https://github.com/Code-Dabblers/Ecommerce-Site/tree/main/src/styles/sass):
 
 * abstracts
 * base

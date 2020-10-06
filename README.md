@@ -14,7 +14,7 @@ To run this project in your local environment follow the steps below:-
 
 And you are good to go!
 
-PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md).
+PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md). Also, before you start working on the code, read the [style guidelines](style-guidelines.md).
 
 **Feel free to contribute to the project by creating an issue and please make sure to follow the [Contribution Guidelines](Contribution.md)**
 

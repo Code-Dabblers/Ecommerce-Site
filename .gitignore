@@ -1,3 +1,4 @@
 node_modules
 src/styles/css/style.comp.css
 src/styles/css/style.prefix.css
+build

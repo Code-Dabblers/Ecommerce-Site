@@ -10,14 +10,13 @@ To run this project in your local environment follow the steps below:-
 
 2. Run `npm i` to install all the dependencies, if you're using VScode then extensions like eslint and prettier will come in handy.
 
-3. Run `npm run start` in the terminal to launch the live server.
+3. Run `npm run dev` in the terminal to launch the live server.
 
 And you are good to go!
 
-PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md).
+PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md). Also, before you start working on the code, read the [style guidelines](style-guidelines.md).
 
 **Feel free to contribute to the project by creating an issue and please make sure to follow the [Contribution Guidelines](Contribution.md)**
-
 
 ## Thank You All Contributing :relaxed:.
 
@@ -36,6 +35,20 @@ PS: This was just to run the project on local machine, if you want to contribute
             <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
             <br />
             <sub><b>Jane Tracy Muthoni</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/czechyoungcoder">
+            <img src="https://avatars1.githubusercontent.com/u/38953979?v=4" width="100;" alt="czechyoungcoder"/>
+            <br />
+            <sub><b>Jakub</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NadaFarook">
+            <img src="https://avatars0.githubusercontent.com/u/63719192?v=4" width="100;" alt="NadaFarook"/>
+            <br />
+            <sub><b>NadaFarook</b></sub>
         </a>
     </td></tr>
 </table>

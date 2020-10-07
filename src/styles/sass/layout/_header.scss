@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: lightgrey;
 
   &__logo-box {
   }
@@ -22,11 +23,26 @@
   &__item {
     display: block;
     padding: 0.5rem 1rem;
-
   }
 
   &__link {
     font-size: 1.6rem;
     text-transform: uppercase;
   }
+}
+
+// Temporary code
+.random {
+  height: 83vh;
+  text-align: center;
+  padding: 2rem;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.random.blue {
+  background: lightblue;
 }

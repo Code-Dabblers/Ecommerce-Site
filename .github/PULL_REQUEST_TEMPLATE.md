@@ -1,5 +1,8 @@
 ## Description
 
+### Issue Number
+- 
+
 Describe the big picture of your changes here to communicate to the maintainers why we should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to that issue number in the description.
 
 ## Types of changes
@@ -16,7 +19,7 @@ _Put an `x` in the boxes that apply_
 
 _Put an `x` in the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! This is simply a reminder of what we are going to look for before merging your code._
 
-- [ ] I have read the [CONTRIBUTING](https://github.com/appium/appium/blob/master/CONTRIBUTING.md) doc
+- [ ] I have read the [CONTRIBUTING](https://github.com/Code-Dabblers/Ecommerce-Site/blob/main/Contribution.md) doc
 - [ ] I have added the issue number
 - [ ] I have selected Ecommerce in the Projects.
 - [ ] I have added necessary documentation (if appropriate)

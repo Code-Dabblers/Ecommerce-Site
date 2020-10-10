@@ -54,5 +54,20 @@ const userIcon = document.getElementById('user-icon');
 userIcon.addEventListener("click",(e)=>{
   const userInfo = document.getElementById("user-info");
   userInfo.classList.toggle("d-block");
-  
-})
+});
+
+const arrowLeft  = document.querySelector(".arrow-left");
+const arrowRight = document.querySelector(".arrow-right");
+const testimonialsP = document.querySelector(".testimonials__p");
+
+arrowLeft.addEventListener("click", (e)=>{
+  arrowLeft.classList.add("active-arrow");
+  arrowRight.classList.remove("active-arrow");
+  testimonialsP.innerHTML = "Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage."
+});
+
+arrowRight.addEventListener("click", (e)=>{
+  arrowRight.classList.add("active-arrow");
+  arrowLeft.classList.remove("active-arrow");
+  testimonialsP.innerHTML = "Second Page"
+});

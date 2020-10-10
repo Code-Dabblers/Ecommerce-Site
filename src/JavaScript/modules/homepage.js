@@ -144,14 +144,9 @@ const homepage = () => {
            </p>
            <div>Gita Savitri</div>
         </div>
-
         <div class="testimonials__arrows">
-            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 5.5H14M1 5.5L5.6129 1M1 5.5L5.6129 10" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 5.5H1M14 5.5L9.3871 1M14 5.5L9.3871 10" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <i class="fa fa-long-arrow-alt-left arrow-left"></i>
+            <i class="fa fa-long-arrow-alt-right arrow-right"></i>
         </div>
       </div>
     </div>

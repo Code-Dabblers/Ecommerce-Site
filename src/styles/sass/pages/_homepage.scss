@@ -1,0 +1,147 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+#router {
+  padding-top: 16vh;
+}
+
+.homepage__main {
+  height: 60vh;
+  &__img-wrapper {
+    @include widthHeight(100%, 100%);
+    @include flexMixin(center, center, column);
+    img {
+      @include widthHeight(93%, 80%);
+      display: block;
+      margin: auto;
+      border-radius: $px7ToRem;
+    }
+  }
+}
+
+.best-sellers {
+  margin: auto;
+  width: 95%;
+  &__header {
+    @include flexMixin(space-between);
+    width: 95%;
+    margin: auto;
+    padding: $px5ToRem;
+    font-size: 1.5rem;
+    h3 {
+      color: $dark-blue-2;
+    }
+    a {
+      color: $dark-purple;
+    }
+  }
+  &__list {
+    @include paddingTopBottom;
+    display: grid;
+    grid-gap: $px20ToRem;
+    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    &__item {
+      min-height: $bestSellerItemHeight;
+      min-width: 165px;
+      border: 1px solid rgba(173, 216, 230, 0.658);
+      border-radius: $px5ToRem;
+      img {
+        @include widthHeight(100%, 100%);
+        display: block;
+        margin: auto;
+        padding: $px7ToRem;
+        border-radius: $px10ToRem;
+      }
+      &__name {
+        color: $dark-blue;
+        font-size: 1.9rem;
+        padding: $px5ToRem;
+      }
+      &__price {
+        color: $dark-purple;
+        padding: $px5ToRem;
+        font-size: 1.9rem;
+      }
+      &__rating {
+        @include widthHeight(75%, 40%);
+        @include flexMixin(null, center);
+      }
+    }
+  }
+}
+
+.star {
+  @include widthHeight(100px, 50px);
+  transform: scale(0.5);
+  background: $yellow-star;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 66%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.star--5 {
+  background: $gray-star;
+}
+.why-choose-us {
+  @include flexMixin(space-evenly, center, column);
+  background-color: #dddddd77;
+  min-height: 80vh;
+  text-align: center;
+  margin: auto;
+  h3 {
+    color: $dark-blue;
+    font-size: 2.5rem;
+  }
+  &__reason {
+    @include paddingTopBottom($px20ToRem, $px20ToRem);
+  }
+}
+.testimonials {
+  @include paddingTopBottom;
+  @include flexMixin(space-evenly, null, column);
+  min-height: 50vh;
+  position: relative;
+  h4 {
+    color: $dark-blue;
+    font-size: 2.5rem;
+    padding: $px10ToRem;
+    margin-left: 15px;
+  }
+  &__p-wrapper {
+    background: $light-gray;
+    width: 90%;
+    margin: auto;
+    border-radius: $px10ToRem;
+    p {
+      font-family: "Arial Narrow", Arial, sans-serif;
+      font-size: 2.2rem;
+      padding: $px20ToRem;
+      color: rgb(160, 159, 159);
+      line-height: 1.5;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    div {
+      font-size: large;
+      padding: $px10ToRem;
+    }
+  }
+
+  &__arrows {
+    @include paddingTopBottom;
+    @include flexMixin(space-evenly);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}

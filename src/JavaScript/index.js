@@ -1,4 +1,4 @@
-import '../styles/sass/main.scss'
+import "../styles/sass/main.scss";
 import { html, render } from "lit-html";
 import homepage from "./modules/homepage.js";
 import cart from "./modules/cart.js";
@@ -48,3 +48,11 @@ router
     render(myTemplate(), document.getElementById("router"));
   })
   .resolve();
+
+const userIcon = document.getElementById('user-icon');
+
+userIcon.addEventListener("click",(e)=>{
+  const userInfo = document.getElementById("user-info");
+  userInfo.classList.toggle("d-block");
+  
+})

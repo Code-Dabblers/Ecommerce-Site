@@ -139,13 +139,13 @@ const homepage = () => {
       <div class="testimonials">
         <h4>Testimonials</h4>
         <div class="testimonials__p-wrapper">
-           <p>
+           <p class="testimonials__p">
            Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage.
            </p>
            <div>Gita Savitri</div>
         </div>
         <div class="testimonials__arrows">
-            <i class="fa fa-long-arrow-alt-left arrow-left"></i>
+            <i class="fa fa-long-arrow-alt-left arrow-left active-arrow"></i>
             <i class="fa fa-long-arrow-alt-right arrow-right"></i>
         </div>
       </div>

@@ -145,3 +145,12 @@
     cursor: pointer;
   }
 }
+
+.arrow-left,
+.arrow-right {
+  font-size: 2.5rem;
+  color: #232323;
+}
+.active-arrow {
+  color: #999999;
+}

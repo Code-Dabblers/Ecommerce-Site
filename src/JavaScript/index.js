@@ -50,11 +50,17 @@ router
   .resolve();
 
 const userIcon = document.getElementById('user-icon');
+const userInfo = document.getElementById("user-info");
 
 userIcon.addEventListener("click",(e)=>{
-  const userInfo = document.getElementById("user-info");
   userInfo.classList.toggle("d-block");
 });
+
+window.addEventListener('click', function(event) {
+  if (event.target.parentNode !== userIcon || event.target === userIcon) {
+     userInfo.classList.remove("d-block");
+  }
+})
 
 const arrowLeft  = document.querySelector(".arrow-left");
 const arrowRight = document.querySelector(".arrow-right");
@@ -71,3 +77,4 @@ arrowRight.addEventListener("click", (e)=>{
   arrowLeft.classList.remove("active-arrow");
   testimonialsP.innerHTML = "Second Page"
 });
+

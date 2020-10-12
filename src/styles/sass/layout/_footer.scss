@@ -36,6 +36,17 @@
 
 .social-icon--reduce-size {
   @include widthHeight(75px, 30px);
-  @include flexMixin;
   margin-top: $px10ToRem;
+}
+
+.fab {
+  font-size: 3rem;
+}
+.fa-facebook-f {
+  color: #583564;
+  margin-left: 10px;
+}
+
+.fa-twitter {
+  color: #b1a2f0;
 }

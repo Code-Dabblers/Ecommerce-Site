@@ -30,7 +30,7 @@ const homepage = () => {
                   </div>
                  
                   <ul class="best-sellers__list__item__inner">
-                     <li class="best-sellers__list__item__name">Nike Air Max 270 React ENG</li>
+                     <li class="best-sellers__list__item__name"><a href="#">Nike Air Max 270 React ENG</a></li>
                      <li class="best-sellers__list__item__rating">
                         <div class="star star-1"></div>
                         <div class="star star-2"></div>
@@ -48,7 +48,7 @@ const homepage = () => {
                 </div>
 
                 <ul class="best-sellers__list__item__inner">
-                    <li class="best-sellers__list__item__name">Nike Air Max 270 React ENG</li>
+                    <li class="best-sellers__list__item__name"><a href="#">Nike Air Max 270 React ENG</a></li>
                     <li class="best-sellers__list__item__rating">
                       <span class="star"></span>
                       <span class="star"></span>
@@ -66,7 +66,7 @@ const homepage = () => {
                   </div>
 
                   <ul class="best-sellers__list__item__inner">
-                    <li class="best-sellers__list__item__name">Nike Air Max 270 React ENG</li>
+                    <li class="best-sellers__list__item__name"><a href="#">Nike Air Max 270 React ENG</a></li>
                     <li class="best-sellers__list__item__rating">
                         <div class="star star-1"></div>
                         <div class="star star-2"></div>
@@ -84,7 +84,7 @@ const homepage = () => {
                     </div>
 
                     <ul class="best-sellers__list__item__inner">
-                      <li class="best-sellers__list__item__name">Nike Air Max 270 React ENG</li>
+                      <li class="best-sellers__list__item__name"><a href="#">Nike Air Max 270 React ENG</a></li>
                       <li class="best-sellers__list__item__rating">
                           <div class="star"></div>
                           <div class="star"></div>

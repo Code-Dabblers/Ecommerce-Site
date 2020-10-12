@@ -45,6 +45,9 @@
       min-width: 165px;
       border: 1px solid rgba(173, 216, 230, 0.658);
       border-radius: $px5ToRem;
+      &:hover {
+        border-width: 3px;
+      }
       img {
         @include widthHeight(100%, 100%);
         display: block;

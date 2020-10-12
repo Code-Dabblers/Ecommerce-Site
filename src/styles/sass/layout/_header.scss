@@ -56,15 +56,18 @@
     height: 30px;
     position: relative;
     width: 100%;
-    svg:first-child {
-      position: absolute;
-      right: 0;
-      top: -3px;
-    }
-    svg:last-child {
-      position: absolute;
-      right: 6px;
-      top: 3px;
+    cursor: pointer;
+    svg {
+      &:first-child {
+        position: absolute;
+        right: 0;
+        top: -3px;
+      }
+      &:last-child {
+        position: absolute;
+        right: 6px;
+        top: 3px;
+      }
     }
   }
 

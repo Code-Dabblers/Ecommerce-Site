@@ -1,7 +1,52 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
 .footer {
-  color: #fff;
-  background: #000;
-  padding: 1rem;
-  font-size: 2rem;
-  text-align: center;
+  @include paddingTopBottom;
+  min-height: 70vh;
+  background: #dcd8f3c4;
+  line-height: 1.8;
+  p {
+    color: gray;
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 2rem;
+    color: $dark-blue;
+  }
+}
+
+.footer__list {
+  @include flexMixin(space-evenly, null, column);
+  width: 70%;
+  min-height: 70vh;
+  margin: auto;
+
+  &__item__brand {
+    @include flexMixin;
+    h2 {
+      padding: $px5ToRem;
+    }
+  }
+
+  &__item {
+    @include paddingTopBottom($px10ToRem, $px10ToRem);
+  }
+}
+
+.social-icon--reduce-size {
+  @include widthHeight(75px, 30px);
+  margin-top: $px10ToRem;
+}
+
+.fab {
+  font-size: 3rem;
+}
+.fa-facebook-f {
+  color: #583564;
+  margin-left: 10px;
+}
+
+.fa-twitter {
+  color: #b1a2f0;
 }

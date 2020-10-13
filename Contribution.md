@@ -23,7 +23,7 @@ This is an open source project so feel free to contribute. Follow the guidelines
 1. Create your PR into the Develop branch (not main branch) with the following steps.
     * Stage all the changes using - `git add .`
     * Commit the staged changes using - `git commit -m "your commit message"`. Make sure to write meaningful commit messages.
-    * Before you push the commit make sure to pull the changes in the remote branch using `git pull upstream develop`, in case of conflicts, please resolve them.
+    * Before you push the commit make sure to pull the changes in the remote branch using `git pull upstream develop` (set up upstream using `git remote add upstream https://github.com/Code-Dabblers/Ecommerce-Site.git`) , in case of conflicts, please resolve them.
     * After pulling the changes, push the all the changes using `git push origin branch-name`
 1. Go to [Repository](https://github.com/Code-Dabblers/Ecommerce-Site).
 1. Create a Pull Request against the `develop` branch, make sure you don't make PR against the `main` branch.

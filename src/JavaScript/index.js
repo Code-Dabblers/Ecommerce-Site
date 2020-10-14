@@ -5,6 +5,7 @@ import cart from "./modules/cart.js";
 import search from "./modules/search.js";
 import productList from "./modules/product-list.js";
 import productDetails from "./modules/product-details.js";
+import error404 from "./modules/error404.js";
 
 var root = null;
 var useHash = true; // Defaults to: false
@@ -41,11 +42,8 @@ router
 
 router
   .notFound(function () {
-    // Define a template
-    const myTemplate = () => html`<h1 class="random">Error 404: Not Found</h1>`;
-
     // Render the template to the document
-    render(myTemplate(), document.getElementById("router"));
+    render(error404(), document.getElementById("router"));
   })
   .resolve();
 

@@ -31,6 +31,13 @@ PS: This was just to run the project on local machine, if you want to contribute
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/hajarNasr">
+            <img src="https://avatars0.githubusercontent.com/u/43115763?v=4" width="100;" alt="hajarNasr"/>
+            <br />
+            <sub><b>HajarNasr</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/czechyoungcoder">
             <img src="https://avatars1.githubusercontent.com/u/38953979?v=4" width="100;" alt="czechyoungcoder"/>
             <br />

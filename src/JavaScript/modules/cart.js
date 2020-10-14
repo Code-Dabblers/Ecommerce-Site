@@ -16,16 +16,19 @@ const cart = () => {
       </ul>
     </div>
 
-    <div class="item-container">
+    
       <div class="item-box-1">
         <div class="img-wrapper">
           <a href=""><img src="${shoe4}" alt="" /></a>
         </div>
+
         <div class="item-details-mobile">
-        <h3 class="itemName">Nike Airmax 270 React</h3>
-        <li>$299.43</li>
+          <h3 class="itemName">Nike Airmaxx 270 React</h3>
+          <i class="far fa-heart fa-2x></i>
+          <li>$299.43</li>
         </div>
-        <div class="item-details>
+        
+        <div class="item-details">
           <h3 class="itemName">Nike Airmax 270 React</h3>
           <li>$998</li>
 
@@ -33,18 +36,38 @@ const cart = () => {
         </div>
       </div>
 
-      <div class="item-box-2">
+
+
+
+
+
+
+
+
+
+
+
+      
+       <div class="item-box-2">
         <div class="img-wrapper">
-          <a href=""><img src="${shoe2}" alt="" /></a>
+          <a href=""><img src="${shoe4}" alt="" /></a>
         </div>
-        <div class="item-details>
+
+        <div class="item-details-mobile">
+          <h3 class="itemName">Nike Airmaxx 270 React</h3>
+          <i class="far fa-heart fa-2x></i>
+          <li>$299.43</li>
+        </div>
+        
+        <div class="item-details">
           <h3 class="itemName">Nike Airmax 270 React</h3>
           <li>$998</li>
 
           <li>$499</li>
         </div>
       </div>
-    </div>
+      </div>
+
 
     <div class="checkout-container-mobile">
       <div class="box-1">

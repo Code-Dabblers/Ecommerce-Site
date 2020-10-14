@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   li {
-    margin-left: 2rem;
+    margin-left: 1.8rem;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     line-height: 1.7;
@@ -11,8 +11,8 @@
     color: $dark-blue-2;
     float: left;
   }
-  margin-top: 3rem;
-  padding-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 0.3rem solid $light-blue;
   width: 100%;
 }
@@ -40,79 +40,49 @@
   }
 }
 
-.item-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-basis: 10rem;
-
-  .item-details div{
-    visibility: hidden;
-    @include respond(desktop) {
-      visibility: visible;
-    }
-    .itemName h3 {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      line-height: 1.7;
-      font-size: 1rem;
-    }
-  }
-
-  .item-container div {
-    border: 0.3rem solid $light-blue;
-    border-radius: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
-    padding: 2.2rem;
-  }
-}
-
 .item-box-1,
 .item-box-2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-basis: 10rem;
+  border: 0.3rem solid $light-blue;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  padding: 2.2rem;
+
   .img-wrapper img {
     height: 3rem;
     border-radius: 1rem;
   }
 }
 
-.checkout-container-mobile,
-.box-1 {
+/*Hidden for desktop*/
+.item-details {
+  visibility: hidden;
+  .itemName h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    line-height: 1.7;
+    font-size: 1rem;
+    visibility: hidden;
+  }
+
+  li {
+    visibility: hidden;
+  }
+  @include respond(desktop) {
+    visibility: visible;
+  }
+}
+
+.btn {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
 
-  .checkout-1 ul {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .checkout-2 ul {
-    justify-content: flex-end;
-    justify-content: space-between;
-  }
-
-  .checkout-3 ul {
-    justify-content: flex-start;
-    justify-content: space-between;
-  }
-
-  .checkout-4 ul {
-    justify-content: flex-end;
-    justify-content: space-between;
-  }
-
-  .btn {
-    display: flex;
-    flex-wrap: wrap;
-
-    flex-basis: 10rem;
-  }
+  flex-basis: 10rem;
 }
 
 .checkout-container-mobile div {

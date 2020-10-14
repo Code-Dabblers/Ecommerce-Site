@@ -57,6 +57,13 @@ PS: This was just to run the project on local machine, if you want to contribute
             <br />
             <sub><b>NadaFarook</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NadaaFarook">
+            <img src="https://avatars0.githubusercontent.com/u/59258814?v=4" width="100;" alt="NadaaFarook"/>
+            <br />
+            <sub><b>Nada Farook</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: contributors -end -->

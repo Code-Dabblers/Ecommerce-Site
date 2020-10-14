@@ -14,10 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-       rel="stylesheet"
->
     <title>E-Commerce site</title>
   </head>
   <body>
@@ -25,6 +21,7 @@
     <header class="header">
       <div class="header__wrapper">
       <div class="header__top">
+        <a href="/" data-navigo>
         <div class="header__logo">
           <div>
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,8 +29,9 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3543 11.9781C18.9184 12.5422 18.9184 13.4567 18.3543 14.0208L14.0209 18.3542C13.4569 18.9183 12.5423 18.9183 11.9782 18.3542L7.64486 14.0208C7.08077 13.4567 7.08077 12.5422 7.64486 11.9781L11.9782 7.64475C12.5423 7.08066 13.4569 7.08066 14.0209 7.64475L18.3543 11.9781ZM12.9996 10.7089L10.709 12.9995L12.9996 15.29L15.2901 12.9995L12.9996 10.7089Z" fill="white"/>
               </svg>              
           </div>
-          <a href="/"><h1>E-Comm</h1></a>
+          <h1>E-Comm</h1>
         </div>
+        </a>
         <div class="header__user-icon">  
             <!--ON SUBMIT SHOULD GO TO '/products/search/:param' --> 
             <div id="user-icon">
@@ -80,19 +78,19 @@
             </form>
            </div>
            <div class="header__bottom_right">
-             <a href="">
+             <a href="" data-navigo>
               <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.54542 10.8401L11.0006 18.7351L18.4558 10.8401L18.4961 10.7974C20.5568 8.61508 20.5568 5.08375 18.4961 2.90242C16.4353 0.721093 13.1007 0.720078 11.0409 2.90242L11.0006 2.94505L10.9594 2.90141C8.89863 0.719063 5.56401 0.719063 3.5042 2.90141C1.44439 5.08375 1.44343 8.61508 3.5042 10.7964L3.54542 10.8401Z" stroke="#9098B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               </a>
-              <a href="#">
+              <a href="/cart" data-navigo>
                 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.7438 25.2551C11.1071 25.2551 11.4016 24.9606 11.4016 24.5973C11.4016 24.234 11.1071 23.9395 10.7438 23.9395C10.3805 23.9395 10.0859 24.234 10.0859 24.5973C10.0859 24.9606 10.3805 25.2551 10.7438 25.2551Z" fill="#9098B1" stroke="#9098B1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M19.9547 25.2551C20.318 25.2551 20.6126 24.9606 20.6126 24.5973C20.6126 24.234 20.318 23.9395 19.9547 23.9395C19.5914 23.9395 19.2969 24.234 19.2969 24.5973C19.2969 24.9606 19.5914 25.2551 19.9547 25.2551Z" fill="#9098B1" stroke="#9098B1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M3.50781 4.2041H6.13917L8.77052 19.9922H21.9273L24.5587 8.15114H7.45485" stroke="#9098B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> 
               </a>
-              <a href="#">
+              <a href="/products/list" data-navigo>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="25" height="25"
                     viewBox="0 0 172 172"

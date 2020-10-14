@@ -14,7 +14,7 @@ To run this project in your local environment follow the steps below:-
 
 And you are good to go!
 
-PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md).
+PS: This was just to run the project on local machine, if you want to contribute to the project then follow the instructions in [Contribution.md](Contribution.md). Also, before you start working on the code, read the [style guidelines](style-guidelines.md).
 
 **Feel free to contribute to the project by creating an issue and please make sure to follow the [Contribution Guidelines](Contribution.md)**
 
@@ -31,10 +31,10 @@ PS: This was just to run the project on local machine, if you want to contribute
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/muchirijane">
-            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+        <a href="https://github.com/hajarNasr">
+            <img src="https://avatars0.githubusercontent.com/u/43115763?v=4" width="100;" alt="hajarNasr"/>
             <br />
-            <sub><b>Jane Tracy Muthoni</b></sub>
+            <sub><b>HajarNasr</b></sub>
         </a>
     </td>
     <td align="center">
@@ -45,10 +45,24 @@ PS: This was just to run the project on local machine, if you want to contribute
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/muchirijane">
+            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+            <br />
+            <sub><b>Jane Tracy Muthoni</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/NadaFarook">
             <img src="https://avatars0.githubusercontent.com/u/63719192?v=4" width="100;" alt="NadaFarook"/>
             <br />
             <sub><b>NadaFarook</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NadaaFarook">
+            <img src="https://avatars0.githubusercontent.com/u/59258814?v=4" width="100;" alt="NadaaFarook"/>
+            <br />
+            <sub><b>Nada Farook</b></sub>
         </a>
     </td></tr>
 </table>

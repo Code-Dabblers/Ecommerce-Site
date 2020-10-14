@@ -1,11 +1,17 @@
 import { html } from "lit-html";
-
+import shoe5 from "../../assets/landing-page/shoe-5.png";
 const cart = () => {
   return html`
     <div class="random">
-      <h1>Its Cart Route</h1>
-      <h2>And this route is "/cart"</h2>
+        
+        <li>Karen</li>
+        <li>s</li>
+        <li>Fab</li>
+        <img src="${shoe5}" alt="" />
+      </ul>
     </div>
+
+    
   `;
 };
 

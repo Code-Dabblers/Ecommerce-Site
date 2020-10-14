@@ -1,0 +1,29 @@
+.random {
+  background: $white;
+  padding: 2rem;
+
+  li {
+    
+    
+    a{
+      @include respond(tablet){
+       margin: 0 auto; 
+      }
+    }
+  }
+  }
+@include flex-col;
+    font-size: 5rem;
+
+    @include respond(tablet) {
+    background: red;
+
+
+  @include respond(tablet) {
+    background: chartreuse;
+  }
+
+  @include respond(desktop) {
+    background-color: cyan;
+  }
+}

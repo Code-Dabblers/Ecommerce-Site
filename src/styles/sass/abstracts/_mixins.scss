@@ -15,3 +15,10 @@
     }
   }
 }
+
+@mixin flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light-blue;
+}

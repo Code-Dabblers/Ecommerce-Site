@@ -1,29 +1,176 @@
-.random {
+.cartHeadermobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  li {
+    margin-left: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    line-height: 1.7;
+    font-size: 20px;
+    color: $dark-blue-2;
+    float: left;
+  }
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.3rem solid $light-blue;
+  width: 100%;
+}
+
+.cartHeader {
   background: $white;
-  padding: 2rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    visibility: hidden;
+  }
 
   li {
-    
-    
-    a{
-      @include respond(tablet){
-       margin: 0 auto; 
-      }
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  @include respond(desktop) {
+    visibility: visible;
+  }
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 10rem;
+
+  .item-details div{
+    visibility: hidden;
+    @include respond(desktop) {
+      visibility: visible;
+    }
+    .itemName h3 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      line-height: 1.7;
+      font-size: 1rem;
     }
   }
+
+  .item-container div {
+    border: 0.3rem solid $light-blue;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding: 2.2rem;
   }
-@include flex-col;
-    font-size: 5rem;
+}
 
-    @include respond(tablet) {
-    background: red;
+.item-box-1,
+.item-box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  .img-wrapper img {
+    height: 3rem;
+    border-radius: 1rem;
+  }
+}
 
+.checkout-container-mobile,
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  @include respond(tablet) {
-    background: chartreuse;
+  .checkout-1 ul {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .checkout-2 ul {
+    justify-content: flex-end;
+    justify-content: space-between;
+  }
+
+  .checkout-3 ul {
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .checkout-4 ul {
+    justify-content: flex-end;
+    justify-content: space-between;
+  }
+
+  .btn {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-basis: 10rem;
+  }
+}
+
+.checkout-container-mobile div {
+  border: 0.3rem solid $light-blue;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  padding: 2.2rem;
+  width: 100%;
+}
+.box-2 {
+  display: flex;
+  visibility: hidden;
+}
+
+.checkout-container-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  visibility: hidden;
+
+  .checkout-container-1 div {
+    border: 0.3rem solid $light-blue;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding: 2.2rem;
+  }
+
+  .btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 10rem;
   }
 
   @include respond(desktop) {
-    background-color: cyan;
+    visibility: visible;
   }
 }
+
+/*
+  li {
+    a {
+      @include respond(tablet) {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@include respond(tablet) {
+  background: chartreuse;
+}
+
+@include respond(desktop) {
+  background-color: cyan;
+}
+*/

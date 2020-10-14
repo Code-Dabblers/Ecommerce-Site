@@ -1,0 +1,41 @@
+// Homepage and Header mixins
+@mixin paddingTopBottom($top: $px20ToRem, $bottom: $px20ToRem) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flexMixin($jsutifyContent: null, $alignItems: null, $columDir: null) {
+  display: flex;
+  @if ($columDir) {
+    flex-direction: column;
+  }
+  @if ($jsutifyContent) {
+    justify-content: $jsutifyContent;
+  }
+  @if ($alignItems) {
+    align-items: $alignItems;
+  }
+}
+
+// MEDIA QUERIES
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 43.75em) {
+      // 700px
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 56.25em) {
+      // 900px
+      @content;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.header__wrapper {
+  @include flexMixin(space-between, null, column);
+  position: fixed;
+  top: 0;
+  min-width: 290px;
+  min-height: 15vh;
+  width: 100%;
+  background: $light-gray;
+  z-index: 9999999;
+  border-bottom: 1px solid #d0d0d3a4;
+}
+.header {
+  &__logo {
+    @include flexMixin(null, center);
+    font-size: 1.2rem;
+    h1 {
+      color: #9098b1;
+      padding: 5px;
+      margin-top: -5px;
+    }
+  }
+
+  &__top {
+    @include flexMixin(space-between, center);
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  &__bottom {
+    @include flexMixin(space-between, center);
+    width: 95%;
+    margin: auto;
+
+    &_left {
+      @include flexMixin(null, center, null);
+      background-color: white;
+      border: 1px solid #dedfe2;
+      height: 33px;
+      width: 57%;
+      border-radius: 4px;
+      padding-left: 5px;
+    }
+
+    &_right {
+      @include flexMixin(space-between, center);
+      width: 37%;
+    }
+  }
+  &__user-icon {
+    @include flexMixin(flex-end, center);
+    flex: 0.75;
+    height: 30px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    svg {
+      &:first-child {
+        position: absolute;
+        right: 0;
+        top: -3px;
+      }
+      &:last-child {
+        position: absolute;
+        right: 6px;
+        top: 3px;
+      }
+    }
+  }
+
+  &__search-form {
+    @include flexMixin(space-between);
+    width: 80%;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      margin-left: 3px;
+    }
+  }
+}
+
+#user-icon {
+  cursor: pointer;
+}
+#user-info {
+  position: absolute;
+  top: 28px;
+  right: -10px;
+  background: #b5b8c2;
+  border-radius: 3px;
+  min-height: 10vh;
+  display: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  ul {
+    li {
+      padding: 3px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        padding-right: 5px;
+      }
+    }
+    li:last-child {
+      width: 60%;
+      border-radius: 20px;
+      margin: auto;
+      margin-top: 10px;
+      background-color: #a88da6;
+      display: block;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      a {
+        color: whitesmoke;
+      }
+      &:hover {
+        background: #ad9fac;
+      }
+    }
+  }
+}
+.d-block {
+  display: block !important;
+}

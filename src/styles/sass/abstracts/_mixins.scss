@@ -22,6 +22,19 @@
   }
 }
 
+@mixin centered($jsutifyContent: null, $alignItems: null, $row: null) {
+  display: flex;
+  @if ($row) {
+    flex-direction: row;
+  }
+  @if ($jsutifyContent) {
+    justify-content: $jsutifyContent;
+  }
+  @if ($alignItems) {
+    align-items: $alignItems;
+  }
+}
+
 // MEDIA QUERIES
 
 @mixin respond($breakpoint) {

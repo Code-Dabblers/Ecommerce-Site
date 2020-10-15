@@ -7,6 +7,8 @@ const homepage = () => {
   const img2 = require("../../assets/landing-page/purse-2.png");
   const img3 = require("../../assets/landing-page/shoe-1.png");
   const img4 = require("../../assets/landing-page/shoe-2.png");
+  const testimonialImage = require("../../assets/landing-page/bg-shapes.svg");
+  const girl = require("../../assets/landing-page/girl.png");
   return html`
     <div class="homepage">
       <!---------------------------- MAIN ------------------------------------------------>
@@ -183,16 +185,23 @@ const homepage = () => {
 
       <!---------------------------- TESTIMONIALS ----------------------------------------->
       <div class="testimonials">
-        <h4>Testimonials</h4>
-        <div class="testimonials__p-wrapper">
-           <p class="testimonials__p">
-           Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage.
-           </p>
-           <div>Gita Savitri</div>
+        <div class="testimonials__img">
+          <img src="${testimonialImage.default}" class="testimonials__img--1" alt="Testimonial background" />
+          <img src="${girl.default}" class="testimonials__img--2" alt="Testimonial girl" />
+
         </div>
-        <div class="testimonials__arrows">
-            <i class="fa fa-long-arrow-alt-left arrow-left active-arrow"></i>
-            <i class="fa fa-long-arrow-alt-right arrow-right"></i>
+        <div class="testimonials__text">
+            <h4>Testimonials</h4>
+            <div class="testimonials__p-wrapper">
+              <p class="testimonials__p">
+              Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage.
+              </p>
+              <div>Gita Savitri</div>
+            </div>
+            <div class="testimonials__arrows">
+                <i class="fa fa-long-arrow-alt-left arrow-left active-arrow"></i>
+                <i class="fa fa-long-arrow-alt-right arrow-right"></i>
+            </div>
         </div>
       </div>
     </div>

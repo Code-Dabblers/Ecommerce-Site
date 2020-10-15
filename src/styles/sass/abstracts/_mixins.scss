@@ -58,4 +58,11 @@
       @content;
     }
   }
+
+  @if $breakpoint == large-desktop {
+    @media only screen and (min-width: 90em) {
+      // 1440px
+      @content;
+    }
+  }
 }

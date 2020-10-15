@@ -7,6 +7,7 @@
 
 .homepage__main {
   height: 60vh;
+  position: relative;
   &__img-wrapper {
     @include widthHeight(100%, 100%);
     @include flexMixin(center, center, column);
@@ -15,6 +16,20 @@
       display: block;
       margin: auto;
       border-radius: $px7ToRem;
+    }
+  }
+
+  &-title{
+    position: absolute;
+    display: inline;
+    color: $white;
+    font-size: 1.9rem;
+    top: 50%;
+    left: 10%;
+    width: 40%;
+
+    @include respond(tablet){
+      font-size: 2.4rem;
     }
   }
 }
@@ -39,8 +54,12 @@
     @include paddingTopBottom;
     display: grid;
     grid-gap: $px20ToRem;
-    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    grid-template-columns: repeat(2, minmax(165px, 1fr));
     @include respond(tablet){
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    @include respond(laptop){
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
     &__item {
@@ -49,17 +68,25 @@
       border: 1px solid rgba(173, 216, 230, 0.658);
       border-radius: $px5ToRem;
 
-      &--5{
+      &--5{ //This is the added card
         opacity: 0;
+        visibility: hidden;
+        display: none; //This too
         @include respond(tablet){
           opacity: 1;
+          visibility: visible;
+          display: block;
         }
       }
 
-      &--6{
+      &--6{ // plus this one
         opacity: 0;
+        visibility: hidden;
+        display: none; //It doesn't work 
         @include respond(tablet){
           opacity: 1;
+          visibility: visible;
+          display: block;
         }
       }
 
@@ -149,10 +176,18 @@
       line-height: 1.5;
       text-align: justify;
       text-justify: inter-word;
+
+      @include respond(tablet){
+        font-size: 2.5rem;
+      }
     }
     div {
       font-size: large;
       padding: $px10ToRem;
+
+      @include respond(tablet){
+        font-size: 2rem;
+      }
     }
   }
 

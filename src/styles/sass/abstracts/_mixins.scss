@@ -32,9 +32,16 @@
     }
   }
 
-  @if $breakpoint == desktop {
+  @if $breakpoint == laptop {
     @media only screen and (min-width: 56.25em) {
       // 900px
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) {
+      // 1200px
       @content;
     }
   }

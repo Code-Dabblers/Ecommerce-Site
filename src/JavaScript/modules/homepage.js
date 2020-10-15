@@ -2,6 +2,7 @@ import { html } from "lit-html";
 
 const homepage = () => {
   const mainBannaerShoe = require("../../assets/landing-page/main-banner-shoe-img.png");
+  const heroImage = require("../../assets/landing-page/Promotion-Image.png");
   const img1 = require("../../assets/landing-page/purse-3.png");
   const img2 = require("../../assets/landing-page/purse-2.png");
   const img3 = require("../../assets/landing-page/shoe-1.png");
@@ -10,10 +11,14 @@ const homepage = () => {
     <div class="homepage">
       <!---------------------------- MAIN ------------------------------------------------>
       <div class="homepage__wrapper">
-      <div class="homepage__main">
-        <div class="homepage__main__img-wrapper">
-          <img src="${mainBannaerShoe.default}" alt="main-banner-shoe" />
-        </div>
+        <div class="homepage__main">
+          <div class="homepage__main__img-wrapper">
+            <img src="${heroImage.default}" alt="main-banner-shoe" />
+          </div>
+
+          <div class="homepage__main-title">
+            <h1 class="homepage__main-text"> Super Flash Sale 50% Off</h1>
+          </div>
       </div>
 
       <!---------------------------- BEST SELLERS ----------------------------------------->

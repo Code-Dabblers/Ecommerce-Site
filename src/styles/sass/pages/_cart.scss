@@ -158,7 +158,7 @@
     .minus {
       width: 3rem;
       height: 3rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: $gray;
       text-align: center;
       background-color: $white;
@@ -169,7 +169,7 @@
     #quantity {
       width: 3rem;
       height: 3rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       background-color: $light-blue;
       color: $gray;
       text-align: center;
@@ -181,7 +181,7 @@
     .plus {
       width: 3rem;
       height: 3rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: $gray;
       text-align: center;
       background-color: $white;
@@ -289,6 +289,9 @@
 
   a {
     text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.7;
   }
 }
 .checkout-btn a:hover {

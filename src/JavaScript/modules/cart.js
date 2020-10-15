@@ -46,7 +46,7 @@ const cart = () => {
           <form action=">
             <label for="quantity></label>
             <input type="button" value="-" class="minus">
-            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <input type="number" value="1" id="quantity" name="quantity" min="1" max="10">
             <input type="button" value="+" class="plus">
           </form>
         </div>
@@ -82,7 +82,7 @@ const cart = () => {
           <form action=">
             <label for="quantity></label>
             <input type="button" value="-" class="minus">
-            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <input type="number" value="1" id="quantity" name="quantity" min="1" max="10">
             <input type="button" value="+" class="plus">
           </form>
         </div>
@@ -136,6 +136,21 @@ const cart = () => {
       <div class="checkout-btn">
         <a href="" class="btn">Check Out</a>
       </div>
+
+      <script>
+        const userIcon = document.getElementById('user-icon');
+        const userInfo = document.getElementById("user-info");
+
+          userIcon.addEventListener("click",(e)=>{
+          userInfo.classList.toggle("d-block");
+        });
+
+          window.addEventListener('click', function(event) {
+          if (event.target.parentNode !== userIcon || event.target === userIcon) {
+          userInfo.classList.remove("d-block");
+          }
+        })
+      </script>
   `;
 };
 

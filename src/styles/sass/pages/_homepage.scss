@@ -40,11 +40,29 @@
     display: grid;
     grid-gap: $px20ToRem;
     grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    @include respond(tablet){
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
     &__item {
       min-height: $bestSellerItemHeight;
       min-width: 165px;
       border: 1px solid rgba(173, 216, 230, 0.658);
       border-radius: $px5ToRem;
+
+      &--5{
+        opacity: 0;
+        @include respond(tablet){
+          opacity: 1;
+        }
+      }
+
+      &--6{
+        opacity: 0;
+        @include respond(tablet){
+          opacity: 1;
+        }
+      }
+
       &:hover {
         border-width: 3px;
       }

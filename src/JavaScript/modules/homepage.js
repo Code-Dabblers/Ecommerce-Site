@@ -24,7 +24,7 @@ const homepage = () => {
           </div>
      
           <div class="best-sellers__list">
-               <div class="best-sellers__list__item">
+               <div class="best-sellers__list__item best-sellers__list__item--1">
                   <div>
                     <img src="${img1.default}" alt="" />
                   </div>
@@ -42,7 +42,7 @@ const homepage = () => {
                   </ul>
                </div>
 
-              <div class="best-sellers__list__item">
+              <div class="best-sellers__list__item best-sellers__list__item--2">
                 <div>
                   <img src="${img2.default}" alt="" />
                 </div>
@@ -60,7 +60,7 @@ const homepage = () => {
                 </ul>
              </div>
 
-              <div class="best-sellers__list__item">
+              <div class="best-sellers__list__item best-sellers__list__item--3">
                   <div>
                     <img src="${img3.default}" alt="" />
                   </div>
@@ -78,7 +78,7 @@ const homepage = () => {
                   </ul>
                 </div>
 
-                <div class="best-sellers__list__item">
+                <div class="best-sellers__list__item best-sellers__list__item--4">
                     <div>
                       <img src="${img4.default}" alt="" />
                     </div>
@@ -95,6 +95,47 @@ const homepage = () => {
                       <li class="best-sellers__list__item__price">100$</li>
                     </ul>
                 </div>
+
+
+                <div class="best-sellers__list__item best-sellers__list__item--5">
+                  <div>
+                    <img src="${img3.default}" alt="" />
+                  </div>
+
+                  <ul class="best-sellers__list__item__inner">
+                    <li class="best-sellers__list__item__name"><a href="#">Nike Air Max 270 React ENG</a></li>
+                    <li class="best-sellers__list__item__rating">
+                        <div class="star star-1"></div>
+                        <div class="star star-2"></div>
+                        <div class="star star-3"></div>
+                        <div class="star star-4"></div>
+                        <div class="star star-5"></div>
+                    </li>
+                    <li class="best-sellers__list__item__price">100$</li>
+                  </ul>
+                </div>
+
+                <div class="best-sellers__list__item best-sellers__list__item--6">
+                    <div>
+                      <img src="${img4.default}" alt="" />
+                    </div>
+
+                    <ul class="best-sellers__list__item__inner">
+                      <li class="best-sellers__list__item__name"><a href="#">Nike Air Max 270 React ENG</a></li>
+                      <li class="best-sellers__list__item__rating">
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star star--5"></div>
+                      </li>
+                      <li class="best-sellers__list__item__price">100$</li>
+                    </ul>
+                </div>
+
+
+
+
           </div>
       </div>
       

@@ -45,6 +45,13 @@ PS: This was just to run the project on local machine, if you want to contribute
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/itworks-karen">
+            <img src="https://avatars3.githubusercontent.com/u/66133955?v=4" width="100;" alt="itworks-karen"/>
+            <br />
+            <sub><b>Karen</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/muchirijane">
             <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
             <br />
@@ -57,7 +64,8 @@ PS: This was just to run the project on local machine, if you want to contribute
             <br />
             <sub><b>NadaFarook</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/NadaaFarook">
             <img src="https://avatars0.githubusercontent.com/u/59258814?v=4" width="100;" alt="NadaaFarook"/>

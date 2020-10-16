@@ -7,8 +7,8 @@ const error404 = () => {
     <div class="error404__errmsg">
       <div class="error404__errmsg__404">404</div>
       <div class="error404__errmsg__msg">Sorry the content you are looking for doesn't exist.Either it was removed, or you mistyped the link.</div>
-    </div>
       <a href="#">Go to homepage</a>
+    </div>
     </div>
   `;
 };

@@ -1,4 +1,5 @@
 import { html } from "lit-html";
+import flashSale from "./flash-sale.js";
 
 const homepage = () => {
   const mainBannaerShoe = require("../../assets/landing-page/main-banner-shoe-img.png");
@@ -7,6 +8,10 @@ const homepage = () => {
   const img2 = require("../../assets/landing-page/purse-2.png");
   const img3 = require("../../assets/landing-page/shoe-1.png");
   const img4 = require("../../assets/landing-page/shoe-2.png");
+  const img5 = require("../../assets/landing-page/shoe-5.png");
+  const img6 = require("../../assets/landing-page/shoe-6.png");
+  const img7 = require("../../assets/landing-page/shoe-7.png");
+  const img8 = require("../../assets/landing-page/shoe-4.png");
   const testimonialImage = require("../../assets/landing-page/bg-shapes.svg");
   const girl = require("../../assets/landing-page/girl.png");
   return html`
@@ -21,6 +26,10 @@ const homepage = () => {
           <div class="homepage__main-title">
             <h1 class="homepage__main-text"> Super Flash Sale 50% Off</h1>
           </div>
+
+          <div class="homepage__main-sale">
+             ${flashSale}
+          </div>
       </div>
 
       <!---------------------------- BEST SELLERS ----------------------------------------->
@@ -33,7 +42,7 @@ const homepage = () => {
           <div class="best-sellers__list">
                <div class="best-sellers__list__item best-sellers__list__item--1">
                   <div>
-                    <img src="${img1.default}" alt="" />
+                    <img src="${img6.default}" alt="" />
                   </div>
                  
                   <ul class="best-sellers__list__item__inner">
@@ -51,7 +60,7 @@ const homepage = () => {
 
               <div class="best-sellers__list__item best-sellers__list__item--2">
                 <div>
-                  <img src="${img2.default}" alt="" />
+                  <img src="${img5.default}" alt="" />
                 </div>
 
                 <ul class="best-sellers__list__item__inner">
@@ -106,7 +115,7 @@ const homepage = () => {
 
                 <div class="best-sellers__list__item best-sellers__list__item--5">
                   <div>
-                    <img src="${img3.default}" alt="" />
+                    <img src="${img5.default}" alt="" />
                   </div>
 
                   <ul class="best-sellers__list__item__inner">
@@ -124,7 +133,7 @@ const homepage = () => {
 
                 <div class="best-sellers__list__item best-sellers__list__item--6">
                     <div>
-                      <img src="${img4.default}" alt="" />
+                      <img src="${img6.default}" alt="" />
                     </div>
 
                     <ul class="best-sellers__list__item__inner">
@@ -142,7 +151,7 @@ const homepage = () => {
 
                 <div class="best-sellers__list__item best-sellers__list__item--7">
                   <div>
-                    <img src="${img3.default}" alt="" />
+                    <img src="${img7.default}" alt="" />
                   </div>
 
                   <ul class="best-sellers__list__item__inner">
@@ -160,7 +169,7 @@ const homepage = () => {
 
                 <div class="best-sellers__list__item best-sellers__list__item--8">
                     <div>
-                      <img src="${img4.default}" alt="" />
+                      <img src="${img8.default}" alt="" />
                     </div>
 
                     <ul class="best-sellers__list__item__inner">

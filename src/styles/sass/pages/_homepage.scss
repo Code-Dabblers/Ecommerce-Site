@@ -109,6 +109,10 @@
       grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
 
+    @include respond(huge-desktop){
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+
     &__item {
       min-height: $bestSellerItemHeight;
       min-width: 165px;

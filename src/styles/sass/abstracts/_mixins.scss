@@ -66,4 +66,11 @@
       @content;
     }
   }
+
+  @if $breakpoint == huge-desktop {
+    @media only screen and (min-width: 98.75em) {
+      // 15800px
+      @content;
+    }
+  }
 }

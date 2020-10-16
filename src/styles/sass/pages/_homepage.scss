@@ -35,6 +35,10 @@
     @include respond(tablet){
       font-size: 2.4rem;
     }
+
+    @include respond(large-desktop){
+      font-size: 3rem;
+    }
   }
 }
 
@@ -47,11 +51,42 @@
     margin: auto;
     padding: $px5ToRem;
     font-size: 1.5rem;
+
+    @include respond(large-desktop){
+      font-size: 6rem;
+      text-align: center;
+      display: inline-block;
+    }
+
     h3 {
       color: $dark-blue-2;
+
     }
     a {
       color: $dark-purple;
+    }
+
+    &--link{
+      @include respond(large-desktop){
+        display: none;
+      }
+    }
+  }
+
+  &__load{
+    display: none;
+    @include respond(large-desktop){
+        display: block;
+        text-align: center;
+        padding: 60px 0;
+        &-link:link,
+        &-link:visited {
+          font-size: 2rem;
+          text-decoration: none;
+          color: $dark-purple;
+          border-bottom: 1px solid currentColor;
+
+      }
     }
   }
   &__list {
@@ -70,30 +105,40 @@
     @include respond(desktop){
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     }
+    @include respond(large-desktop){
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+
     &__item {
       min-height: $bestSellerItemHeight;
       min-width: 165px;
       border: 1px solid rgba(173, 216, 230, 0.658);
       border-radius: $px5ToRem;
 
-      &--5{ //This is the added card
-        opacity: 0;
-        visibility: hidden;
+      &--5{ 
         display: none; //This too
         @include respond(tablet){
-          opacity: 1;
-          visibility: visible;
           display: block;
         }
       }
 
-      &--6{ // plus this one
-        opacity: 0;
-        visibility: hidden;
-        display: none; //It doesn't work 
+      &--6{
+        display: none; 
         @include respond(tablet){
-          opacity: 1;
-          visibility: visible;
+          display: block;
+        }
+      }
+
+      &--7{ 
+        display: none; 
+        @include respond(large-desktop){
+          display: block;
+        }
+      }
+
+      &--8{ 
+        display: none; 
+        @include respond(large-desktop){
           display: block;
         }
       }
@@ -158,7 +203,11 @@
   }
   h3 {
     color: $dark-blue;
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
+
+    @include respond(large-desktop){
+      font-size: 3.5rem;
+    }
   }
 
   &__reasons {
@@ -177,6 +226,21 @@
     @include respond(laptop){
       &:not(:last-child){
         margin-right: 140px;
+      }
+    }
+
+    @include respond(large-desktop){
+      &:not(:last-child){
+        margin-right: 260px;
+      }
+    }
+
+    &--text{
+      color: $dark-blue;
+      font-size: 2.5rem;
+      
+      @include respond(large-desktop){
+        font-size: 3rem;
       }
     }
   }
@@ -285,6 +349,10 @@
     text-align: center;
     transform: scale(1.2);
     cursor: pointer;
+
+    @include respond(large-desktop){
+      margin-top: 50px;
+    }
   }
 }
 

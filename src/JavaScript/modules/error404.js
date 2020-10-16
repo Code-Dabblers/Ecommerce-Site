@@ -1,10 +1,14 @@
 import { html } from "lit-html";
 
 const error404 = () => {
+  const appLogo = require("../../assets/svgs/app-logo.svg")
   return html`
-    <div>
-      <h1>ERROR 404</h1>
-      <h2>Route not found</h2>
+    <div class="error404">
+    <div class="error404__errmsg">
+      <div class="error404__errmsg__404">404</div>
+      <div class="error404__errmsg__msg">Sorry the content you are looking for doesn't exist.Either it was removed, or you mistyped the link.</div>
+    </div>
+      <a href="#">Go to homepage</a>
     </div>
   `;
 };

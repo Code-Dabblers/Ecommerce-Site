@@ -1,1 +1,54 @@
 // Make sure the error card is in center of the page and is responsive
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+
+.error404{
+    
+    @include widthHeight(100%,80vh);
+    @include flexMixin(center,center,column);
+
+    &__errmsg{
+    @include widthHeight(499px,231px);
+    @include flexMixin(center,center,column);
+    font-style: Montserrat;
+    
+        &__404{
+        font-style  : Nunito;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 6.8125rem;
+        text-align: center;
+        }
+
+        &__msg{
+            @include widthHeight(274px,88px);
+            line-height: 2.75rem;
+            font-size: 2.25rem;
+            text-align: center;
+            font-weight:600;
+            color:$dark-gray;
+        
+
+        @include respond(desktop){
+            @include widthHeight(463px,78px);
+        }
+    }
+    margin-bottom: 4.09375rem;
+    }
+    
+    a{
+        @include flexMixin(center,center);
+        @include widthHeight(237px,62px);
+
+        background: $light-purple-1;
+        border-radius: 0.3125rem;
+        color:$white;
+        font-size:2.25rem;
+
+         @include respond(desktop){
+            @include widthHeight(305px,62px);
+
+        }
+    }
+}

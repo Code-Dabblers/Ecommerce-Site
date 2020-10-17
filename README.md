@@ -67,6 +67,13 @@ PS: This was just to run the project on local machine, if you want to contribute
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/PuneetDhingraA">
+            <img src="https://avatars0.githubusercontent.com/u/68973305?v=4" width="100;" alt="PuneetDhingraA"/>
+            <br />
+            <sub><b>PuneetDhingraA</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/NadaaFarook">
             <img src="https://avatars0.githubusercontent.com/u/59258814?v=4" width="100;" alt="NadaaFarook"/>
             <br />

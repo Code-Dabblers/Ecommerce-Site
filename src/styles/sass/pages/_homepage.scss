@@ -31,7 +31,7 @@
       height: 90%;
     }
     img {
-      @include widthHeight(93%, 80%);
+      @include widthHeight(93%, 70%);
       display: block;
       margin: auto;
       border-radius: $px7ToRem;
@@ -46,17 +46,20 @@
     position: absolute;
     display: inline;
     color: $white;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     top: 50%;
     left: 10%;
-    width: 40%;
+    width: 50%;
 
     @include respond(tablet){
-      font-size: 2.4rem;
+      font-size: 3rem;
+      width: 40%;
+    }
+    @include respond(desktop){
+      font-size: 3.5rem;
     }
 
     @include respond(large-desktop){
-      font-size: 3rem;
       top: 20%;
       width: 30%;
     }
@@ -138,8 +141,7 @@
 }
 
 .best-sellers {
-  margin: 0 auto;
-  width: 95%;
+  @include container ($maxWidth: 88%);
   &__header {
     @include flexMixin(space-between);
     width: 95%;
@@ -310,6 +312,10 @@
   @include respond(tablet){
     min-height: 50vh;
   }
+
+  &__container{
+    @include container ($maxWidth: 88%);
+  }
   h3 {
     color: $dark-blue;
     font-size: 2.5rem; 
@@ -356,9 +362,10 @@
   }
 }
 .testimonials {
+  @include container ($maxWidth: 88%);
   @include paddingTopBottom;
   @include flexMixin(space-evenly, null, column);
-  min-height: 50vh;
+  min-height: 40vh;
   position: relative;
 
   @include respond(desktop){
@@ -400,6 +407,10 @@
     @include respond(large-desktop){
       width: 40%;
     }
+
+    @include respond(huge-desktop){
+      margin-left: 40px;
+    }
   }
 
   h4 {
@@ -423,11 +434,10 @@
     p {
       font-family: "Arial Narrow", Arial, sans-serif;
       font-size: 2.2rem;
-      padding: $px20ToRem;
+      padding: 20px;
       color: rgb(160, 159, 159);
       line-height: 1.5;
-      text-align: justify;
-      text-justify: inter-word;
+      text-align: inherit;
 
       @include respond(tablet){
         font-size: 2.5rem;

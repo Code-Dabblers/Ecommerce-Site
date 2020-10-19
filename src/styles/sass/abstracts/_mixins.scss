@@ -9,6 +9,11 @@
   height: $height;
 }
 
+@mixin container($maxWidth, $margin:null) {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
 @mixin flexMixin($justifyContent: null, $alignItems: null, $columDir: null) {
   display: flex;
   @if ($columDir) {

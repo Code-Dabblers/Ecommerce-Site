@@ -18,8 +18,8 @@ const homepage = () => {
   return html`
     <div class="homepage">
       <!---------------------------- MAIN ------------------------------------------------>
-      <div class="homepage__wrapper">
-        <div class="homepage__main">
+      <main class="homepage__wrapper">
+        <section class="homepage__main">
           <div class="homepage__main__img-wrapper">
             <img src="${heroImage.default}" alt="main-banner-shoe" />
           </div>
@@ -31,10 +31,10 @@ const homepage = () => {
           <div class="homepage__main-sale">
              ${flashSale()}
           </div>
-      </div>
+      </section>
 
       <!---------------------------- BEST SELLERS ----------------------------------------->
-      <div class="best-sellers"> 
+      <section class="best-sellers"> 
           <div class="best-sellers__header">
               <h3>Best Sellers</h3>
               <a class="best-sellers__header--link" href="#">See more</a>
@@ -190,11 +190,11 @@ const homepage = () => {
           <h3 class="best-sellers__load">
             <a class="best-sellers__load-link" href="#">Load more</a>
           </h3>
-      </div>
+      </section>
       
       <!---------------------------- WHY CHOOSE US ----------------------------------------->
-      <div class="why-choose-us">
-         <div></div>
+      <section class="why-choose-us">
+         <div class="why-choose-us__container">
             <h3>WHY CHOOSE US ?</h3>
             <div class="why-choose-us__reasons">
             <div class="why-choose-us__reason">
@@ -228,10 +228,11 @@ const homepage = () => {
               <h4 class="why-choose-us__reason--text">100% REFUND</h4>
             </div>
             </div>
-      </div>
+          </div>
+      </section>
 
       <!---------------------------- TESTIMONIALS ----------------------------------------->
-      <div class="testimonials">
+      <section class="testimonials">
         <div class="testimonials__img">
           <img src="${testimonialImage.default}" class="testimonials__img--1" alt="Testimonial background" />
           <img src="${girl.default}" class="testimonials__img--2" alt="Testimonial girl" />
@@ -250,8 +251,8 @@ const homepage = () => {
                 <i class="fa fa-long-arrow-alt-right arrow-right"></i>
             </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     </div>
   `;
 };

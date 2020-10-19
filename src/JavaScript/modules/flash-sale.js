@@ -25,7 +25,7 @@ const flashSale = () => {
                 <span class="homepage__main-sale-card--text-2">24% Off</span>
             </div>
             <div class="homepage__main-sale-card--pic">
-            <img class="homepage__main-sale-card--img" src="${sale2.default}" alt="purse sale" />
+            <img class="homepage__main-sale-card--img" src="${sale2.default}" alt="colored max air" />
             </div>
             <h4 class="homepage__main-sale-card--price"> $299.43</h4>
 
@@ -38,7 +38,7 @@ const flashSale = () => {
                 <span class="homepage__main-sale-card--text-2">24% Off</span>
             </div>
             <div class="homepage__main-sale-card--pic">
-            <img class="homepage__main-sale-card--img" src="${sale3.default}" alt="purse sale" />
+            <img class="homepage__main-sale-card--img" src="${sale3.default}" alt="red max air" />
             </div>
             <h4 class="homepage__main-sale-card--price"> $299.43</h4>
 

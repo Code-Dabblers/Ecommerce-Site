@@ -20,5 +20,65 @@ PS: This was just to run the project on the local machine, if you want to contri
 
 ## Thank You All Contributing :relaxed:.
 
-<!-- readme: contributors -start -->
+<!-- readme: contributors -start --> 
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/fabcodingzest">
+            <img src="https://avatars1.githubusercontent.com/u/48706652?v=4" width="100;" alt="fabcodingzest"/>
+            <br />
+            <sub><b>Fab</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/hajarNasr">
+            <img src="https://avatars0.githubusercontent.com/u/43115763?v=4" width="100;" alt="hajarNasr"/>
+            <br />
+            <sub><b>hajarNasr</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/czechyoungcoder">
+            <img src="https://avatars1.githubusercontent.com/u/38953979?v=4" width="100;" alt="czechyoungcoder"/>
+            <br />
+            <sub><b>Jakub</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/itworks-karen">
+            <img src="https://avatars3.githubusercontent.com/u/66133955?v=4" width="100;" alt="itworks-karen"/>
+            <br />
+            <sub><b>Karen</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/muchirijane">
+            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+            <br />
+            <sub><b>Jane Tracy Muthoni</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NadaFarook">
+            <img src="https://avatars0.githubusercontent.com/u/63719192?v=4" width="100;" alt="NadaFarook"/>
+            <br />
+            <sub><b>NadaFarook</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/PuneetDhingraA">
+            <img src="https://avatars0.githubusercontent.com/u/68973305?v=4" width="100;" alt="PuneetDhingraA"/>
+            <br />
+            <sub><b>Puneet Dhingra</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NadaaFarook">
+            <img src="https://avatars0.githubusercontent.com/u/59258814?v=4" width="100;" alt="NadaaFarook"/>
+            <br />
+            <sub><b>Nada Farook</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->

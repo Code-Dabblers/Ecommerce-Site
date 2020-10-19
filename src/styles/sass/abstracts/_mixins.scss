@@ -9,18 +9,37 @@
   height: $height;
 }
 
-@mixin flexMixin($jsutifyContent: null, $alignItems: null, $columDir: null) {
+@mixin container($maxWidth) {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+@mixin flexMixin($justifyContent: null, $alignItems: null, $columDir: null) {
   display: flex;
   @if ($columDir) {
     flex-direction: column;
   }
-  @if ($jsutifyContent) {
-    justify-content: $jsutifyContent;
+  @if ($justifyContent) {
+    justify-content: $justifyContent;
   }
   @if ($alignItems) {
     align-items: $alignItems;
   }
 }
+
+@mixin centered($justifyContent: null, $alignItems: null, $row: null) {
+  display: flex;
+  @if ($row) {
+    flex-direction: row;
+  } 
+  @if ($justifyContent) {
+    justify-content: $justifyContent;
+  }
+  @if ($alignItems) {
+    align-items: $alignItems;
+  }
+}
+
 
 // MEDIA QUERIES
 
@@ -32,9 +51,30 @@
     }
   }
 
-  @if $breakpoint == desktop {
+  @if $breakpoint == laptop {
     @media only screen and (min-width: 56.25em) {
       // 900px
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) {
+      // 1200px
+      @content;
+    }
+  }
+
+  @if $breakpoint == large-desktop {
+    @media only screen and (min-width: 90em) {
+      // 1440px
+      @content;
+    }
+  }
+
+  @if $breakpoint == huge-desktop {
+    @media only screen and (min-width: 98.75em) {
+      // 15800px
       @content;
     }
   }

@@ -18,6 +18,10 @@ html {
   @include respond(desktop) {
     font-size: 62.5%;
   }
+
+  @include respond(large-desktop) {
+    font-size: 70.5%;
+  }
 }
 
 body {

@@ -1,50 +1,255 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
 
 #router {
-  padding-top: 16vh;
+  padding-top: 12vh;
 }
 
 .homepage__main {
-  height: 60vh;
+  height: 30vh;
+  position: relative;
+
+  @include respond(tablet){
+    height: 42vh;
+  }
+
+  @include respond(laptop){
+    height: 50vh;
+  }
+
+  @include respond(desktop){
+    height: 64vh;
+  }
+
+  @include respond(large-desktop){
+    height: 80vh;
+    margin: 50px auto;
+  }
+
+  @include respond(huge-desktop){
+    height: 94vh;
+    margin: 50px auto;
+  }
+  
   &__img-wrapper {
     @include widthHeight(100%, 100%);
     @include flexMixin(center, center, column);
+
+    @include respond(large-desktop){
+      height: 90%;
+    }
     img {
-      @include widthHeight(93%, 80%);
+      @include widthHeight(93%, null);
       display: block;
       margin: auto;
       border-radius: $px7ToRem;
+
+      @include respond(large-desktop){
+        height: 90%;
+      }
+    }
+  }
+
+  &-title{
+    position: absolute;
+    display: inline;
+    color: $white;
+    font-size: 2rem;
+    top: 50%;
+    left: 10%;
+    width: 50%;
+
+    @include respond(tablet){
+      font-size: 3rem;
+      width: 40%;
+    }
+    @include respond(desktop){
+      font-size: 3.5rem;
+    }
+
+    @include respond(large-desktop){
+      top: 20%;
+      width: 30%;
+    }
+  }
+
+  &-sale{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    div{
+
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+
+    }
+    @include respond(large-desktop){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    &-card{
+      background-color: $white;
+      box-shadow: 0 5px 80px rgba(0, 0, 0, 0.15);
+      padding: 30px;
+      border-radius: 10px;
+      transition: all .2s ease-in;
+
+      &:hover{
+        box-shadow: 0 6px 90px rgba(0, 0, 0, 0.18);
+        transform: scale(1.1);
+
+      }
+
+      &--title{
+        color: $dark-blue-2;
+        font-size: 2rem;
+        width: 70%;
+      }
+
+      &:hover{
+        background-color: $light-grey;
+      }
+
+      &--pic{
+        height: 220px;
+        width: 300px
+
+      }
+      
+      &--img{
+        height: 100%;
+        width: 100%;
+      }
+
+      &--text{
+        font-size: 16px;
+        &-1{
+          text-decoration-line: line-through;
+          margin-right: 20px;
+        }
+        &-2{
+          color: $light-pink;
+        }
+      }
+
+      &--price{
+        font-size: 3rem;
+        text-align: end;
+        color: $purple;
+      }
     }
   }
 }
 
 .best-sellers {
-  margin: auto;
-  width: 95%;
+  @include container ($maxWidth: 88%);
   &__header {
     @include flexMixin(space-between);
     width: 95%;
     margin: auto;
     padding: $px5ToRem;
     font-size: 1.5rem;
+
+    @include respond(large-desktop){
+      font-size: 6rem;
+      text-align: center;
+      display: inline-block;
+    }
+
     h3 {
       color: $dark-blue-2;
+
     }
     a {
       color: $dark-purple;
+    }
+
+    &--link{
+      @include respond(large-desktop){
+        display: none;
+      }
+    }
+  }
+
+  &__load{
+    display: none;
+    @include respond(large-desktop){
+        display: block;
+        text-align: center;
+        padding: 60px 0;
+        &-link:link,
+        &-link:visited {
+          font-size: 2rem;
+          text-decoration: none;
+          color: $dark-purple;
+          border-bottom: 1px solid currentColor;
+
+      }
     }
   }
   &__list {
     @include paddingTopBottom;
     display: grid;
     grid-gap: $px20ToRem;
-    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    @include respond(tablet){
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    @include respond(laptop){
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    @include respond(desktop){
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+    @include respond(large-desktop){
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
+
+    @include respond(huge-desktop){
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+
     &__item {
       min-height: $bestSellerItemHeight;
       min-width: 165px;
       border: 1px solid rgba(173, 216, 230, 0.658);
       border-radius: $px5ToRem;
+
+      &--5{ 
+        display: none; //This too
+        @include respond(tablet){
+          display: block;
+        }
+      }
+
+      &--6{
+        display: none; 
+        @include respond(tablet){
+          display: block;
+        }
+      }
+
+      &--7{ 
+        display: none; 
+        @include respond(large-desktop){
+          display: block;
+        }
+      }
+
+      &--8{ 
+        display: none; 
+        @include respond(large-desktop){
+          display: block;
+        }
+      }
+
       &:hover {
         border-width: 3px;
       }
@@ -55,19 +260,29 @@
         padding: $px7ToRem;
         border-radius: $px10ToRem;
       }
+      &__inner {
+        @include respond(laptop){
+          text-align: center;
+        }
+
+      }
       &__name {
         color: $dark-blue;
         font-size: 1.9rem;
         padding: $px5ToRem;
       }
       &__price {
-        color: $dark-purple;
+        color: $purple;
         padding: $px5ToRem;
         font-size: 1.9rem;
       }
       &__rating {
         @include widthHeight(75%, 40%);
         @include flexMixin(null, center);
+
+        @include respond(laptop){
+          margin: auto;
+        }
       }
     }
   }
@@ -96,45 +311,166 @@
 .why-choose-us {
   @include flexMixin(space-evenly, center, column);
   background-color: #dddddd77;
-  min-height: 80vh;
+  min-height: 60vh;
   text-align: center;
-  margin: auto;
+  margin: 30px auto;
+
+  @include respond(tablet){
+    min-height: 50vh;
+  }
+
+  &__container{
+    @include container ($maxWidth: 88%);
+  }
   h3 {
     color: $dark-blue;
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
+
+    @include respond(large-desktop){
+      font-size: 3.5rem;
+    }
+  }
+
+  &__reasons {
+    @include respond(tablet){
+      @include centered(center, center, row);
+    }
   }
   &__reason {
+    margin: 40px auto;
     @include paddingTopBottom($px20ToRem, $px20ToRem);
+    @include respond(tablet){
+      &:not(:last-child){
+        margin-right: 70px;
+      }
+    }
+
+    @include respond(laptop){
+      &:not(:last-child){
+        margin-right: 140px;
+      }
+    }
+
+    @include respond(large-desktop){
+      &:not(:last-child){
+        margin-right: 260px;
+      }
+    }
+
+    &--text{
+      color: $dark-blue;
+      font-size: 2.5rem;
+      
+      @include respond(large-desktop){
+        font-size: 3rem;
+      }
+    }
   }
 }
 .testimonials {
+  @include container ($maxWidth: 88%);
   @include paddingTopBottom;
   @include flexMixin(space-evenly, null, column);
-  min-height: 50vh;
+  min-height: 40vh;
   position: relative;
+
+  @include respond(desktop){
+    position: relative;
+    @include centered(center, center, row);
+  }
+
+  @include respond(large-desktop){
+    min-height: 70vh;
+    position: relative;
+    @include centered(center, center, row);
+  }
+
+  &__img{
+    display: none;
+
+    @include respond(large-desktop){
+      display: block;
+      position: relative;
+      @include centered(center, center, row);
+
+      &--1{
+        width: 70%;
+        position: inherit;
+        left: -36%;
+        top: -90px;
+      }
+
+      &--2{
+        position: absolute;
+        top: 20%;
+        width: 90%;
+      }
+    }
+  }
+
+  &__text{
+
+    @include respond(large-desktop){
+      width: 40%;
+    }
+
+    @include respond(huge-desktop){
+      margin-left: 40px;
+      width: 50%;
+    }
+  }
+
   h4 {
     color: $dark-blue;
     font-size: 2.5rem;
     padding: $px10ToRem;
     margin-left: 15px;
+
+    @include respond(tablet){
+      font-size: 2.7rem;
+    }
+    @include respond(laptop){
+      font-size: 3rem;
+    }
   }
   &__p-wrapper {
     background: $light-gray;
     width: 90%;
     margin: auto;
     border-radius: $px10ToRem;
+    padding: 20px;
     p {
       font-family: "Arial Narrow", Arial, sans-serif;
       font-size: 2.2rem;
-      padding: $px20ToRem;
       color: rgb(160, 159, 159);
       line-height: 1.5;
-      text-align: justify;
-      text-justify: inter-word;
+      text-align: inherit;
+
+      span{
+        color: $black;
+        padding-top: 20px;
+        display: block;
+      }
+
+      @include respond(tablet){
+        font-size: 2.5rem;
+        padding: 2rem;
+      }
+      @include respond(desktop){
+        font-size: 2.7rem;
+      }
+
+      @include respond(large-desktop){
+        font-size: 2.2rem;
+      }
     }
     div {
       font-size: large;
       padding: $px10ToRem;
+
+      @include respond(tablet){
+        font-size: 2rem;
+      }
     }
   }
 
@@ -146,6 +482,10 @@
     text-align: center;
     transform: scale(1.2);
     cursor: pointer;
+
+    @include respond(large-desktop){
+      margin-top: 50px;
+    }
   }
 }
 

@@ -45,8 +45,20 @@ PS: This was just to run the project on local machine, if you want to contribute
         </a>
     </td>
     <td align="center">
+<<<<<<< HEAD
         <a href="https://github.com/czechyoungcoder">
             <img src="https://avatars1.githubusercontent.com/u/38953979?v=4" width="100;" alt="czechyoungcoder"/>
+=======
+        <a href="https://github.com/itworks-karen">
+            <img src="https://avatars3.githubusercontent.com/u/66133955?v=4" width="100;" alt="itworks-karen"/>
+            <br />
+            <sub><b>Karen</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/muchirijane">
+            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+>>>>>>> cb09427d13a706d94543488a672c3fda0ea935a3
             <br />
             <sub><b>Jakub</b></sub>
         </a>
@@ -56,6 +68,14 @@ PS: This was just to run the project on local machine, if you want to contribute
             <img src="https://avatars0.githubusercontent.com/u/63719192?v=4" width="100;" alt="NadaFarook"/>
             <br />
             <sub><b>NadaFarook</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/PuneetDhingraA">
+            <img src="https://avatars0.githubusercontent.com/u/68973305?v=4" width="100;" alt="PuneetDhingraA"/>
+            <br />
+            <sub><b>PuneetDhingraA</b></sub>
         </a>
     </td>
     <td align="center">

@@ -12,14 +12,33 @@
   @include respond(tablet){
     height: 60vh;
   }
+
+  @include respond(large-desktop){
+    height: 88vh;
+    margin: 50px auto;
+  }
+
+  @include respond(large-desktop){
+    height: 94vh;
+    margin: 50px auto;
+  }
+  
   &__img-wrapper {
     @include widthHeight(100%, 100%);
     @include flexMixin(center, center, column);
+
+    @include respond(large-desktop){
+      height: 90%;
+    }
     img {
       @include widthHeight(93%, 80%);
       display: block;
       margin: auto;
       border-radius: $px7ToRem;
+
+      @include respond(large-desktop){
+        height: 90%;
+      }
     }
   }
 
@@ -38,12 +57,88 @@
 
     @include respond(large-desktop){
       font-size: 3rem;
+      top: 20%;
+      width: 30%;
+    }
+  }
+
+  &-sale{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    div{
+
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+
+    }
+    @include respond(large-desktop){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    &-card{
+      background-color: $white;
+      box-shadow: 0 5px 80px rgba(0, 0, 0, 0.15);
+      padding: 30px;
+      border-radius: 10px;
+      transition: all .2s ease-in;
+
+      &:hover{
+        box-shadow: 0 6px 90px rgba(0, 0, 0, 0.18);
+        transform: scale(1.1);
+
+      }
+
+      &--title{
+        color: $dark-blue-2;
+        font-size: 2rem;
+        width: 70%;
+      }
+
+      &:hover{
+        background-color: $light-grey;
+      }
+
+      &--pic{
+        height: 220px;
+        width: 300px
+
+      }
+      
+      &--img{
+        height: 100%;
+        width: 100%;
+      }
+
+      &--text{
+        font-size: 16px;
+        &-1{
+          text-decoration-line: line-through;
+          margin-right: 20px;
+        }
+        &-2{
+          color: $light-pink;
+        }
+      }
+
+      &--price{
+        font-size: 3rem;
+        text-align: end;
+        color: $purple;
+      }
     }
   }
 }
 
 .best-sellers {
-  margin: auto;
+  margin: 0 auto;
   width: 95%;
   &__header {
     @include flexMixin(space-between);
@@ -93,7 +188,7 @@
     @include paddingTopBottom;
     display: grid;
     grid-gap: $px20ToRem;
-    grid-template-columns: repeat(2, minmax(165px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
     @include respond(tablet){
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
@@ -157,19 +252,29 @@
         padding: $px7ToRem;
         border-radius: $px10ToRem;
       }
+      &__inner {
+        @include respond(laptop){
+          text-align: center;
+        }
+
+      }
       &__name {
         color: $dark-blue;
         font-size: 1.9rem;
         padding: $px5ToRem;
       }
       &__price {
-        color: $dark-purple;
+        color: $purple;
         padding: $px5ToRem;
         font-size: 1.9rem;
       }
       &__rating {
         @include widthHeight(75%, 40%);
         @include flexMixin(null, center);
+
+        @include respond(laptop){
+          margin: auto;
+        }
       }
     }
   }
@@ -198,9 +303,9 @@
 .why-choose-us {
   @include flexMixin(space-evenly, center, column);
   background-color: #dddddd77;
-  min-height: 80vh;
+  min-height: 60vh;
   text-align: center;
-  margin: auto;
+  margin: 30px auto;
 
   @include respond(tablet){
     min-height: 50vh;
@@ -220,6 +325,7 @@
     }
   }
   &__reason {
+    margin: 40px auto;
     @include paddingTopBottom($px20ToRem, $px20ToRem);
     @include respond(tablet){
       &:not(:last-child){

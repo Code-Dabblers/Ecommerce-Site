@@ -9,26 +9,26 @@
   height: $height;
 }
 
-@mixin flexMixin($jsutifyContent: null, $alignItems: null, $columDir: null) {
+@mixin flexMixin($justifyContent: null, $alignItems: null, $columDir: null) {
   display: flex;
   @if ($columDir) {
     flex-direction: column;
   }
-  @if ($jsutifyContent) {
-    justify-content: $jsutifyContent;
+  @if ($justifyContent) {
+    justify-content: $justifyContent;
   }
   @if ($alignItems) {
     align-items: $alignItems;
   }
 }
 
-@mixin centered($jsutifyContent: null, $alignItems: null, $row: null) {
+@mixin centered($justifyContent: null, $alignItems: null, $row: null) {
   display: flex;
   @if ($row) {
     flex-direction: row;
-  }
-  @if ($jsutifyContent) {
-    justify-content: $jsutifyContent;
+  } 
+  @if ($justifyContent) {
+    justify-content: $justifyContent;
   }
   @if ($alignItems) {
     align-items: $alignItems;

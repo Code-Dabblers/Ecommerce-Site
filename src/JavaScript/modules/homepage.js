@@ -1,6 +1,7 @@
 import { html } from "lit-html";
 import flashSale from "./flash-sale.js";
 
+
 const homepage = () => {
   const mainBannaerShoe = require("../../assets/landing-page/main-banner-shoe-img.png");
   const heroImage = require("../../assets/landing-page/Promotion-Image.png");
@@ -28,12 +29,12 @@ const homepage = () => {
           </div>
 
           <div class="homepage__main-sale">
-             ${flashSale}
+             ${flashSale()}
           </div>
       </div>
 
       <!---------------------------- BEST SELLERS ----------------------------------------->
-      <div class="best-sellers">
+      <div class="best-sellers"> 
           <div class="best-sellers__header">
               <h3>Best Sellers</h3>
               <a class="best-sellers__header--link" href="#">See more</a>
@@ -54,7 +55,7 @@ const homepage = () => {
                         <div class="star star-4"></div>
                         <div class="star star-5"></div>
                      </li>
-                     <li class="best-sellers__list__item__price">100$</li>
+                     <li class="best-sellers__list__item__price">$299,43</li>
                   </ul>
                </div>
 
@@ -72,7 +73,7 @@ const homepage = () => {
                       <span class="star"></span>
                       <span class="star star--5"></span>
                     </li>
-                    <li class="best-sellers__list__item__price">100$</li>
+                    <li class="best-sellers__list__item__price">$299,43</li>
                 </ul>
              </div>
 
@@ -90,7 +91,7 @@ const homepage = () => {
                         <div class="star star-4"></div>
                         <div class="star star-5"></div>
                     </li>
-                    <li class="best-sellers__list__item__price">100$</li>
+                    <li class="best-sellers__list__item__price">$299,43</li>
                   </ul>
                 </div>
 
@@ -108,7 +109,7 @@ const homepage = () => {
                           <div class="star"></div>
                           <div class="star star--5"></div>
                       </li>
-                      <li class="best-sellers__list__item__price">100$</li>
+                      <li class="best-sellers__list__item__price">$299,43</li>
                     </ul>
                 </div>
 
@@ -127,7 +128,7 @@ const homepage = () => {
                         <div class="star star-4"></div>
                         <div class="star star-5"></div>
                     </li>
-                    <li class="best-sellers__list__item__price">100$</li>
+                    <li class="best-sellers__list__item__price">$299,43</li>
                   </ul>
                 </div>
 
@@ -145,7 +146,7 @@ const homepage = () => {
                           <div class="star"></div>
                           <div class="star star--5"></div>
                       </li>
-                      <li class="best-sellers__list__item__price">100$</li>
+                      <li class="best-sellers__list__item__price">$299,43</li>
                     </ul>
                 </div>
 
@@ -163,7 +164,7 @@ const homepage = () => {
                         <div class="star star-4"></div>
                         <div class="star star-5"></div>
                     </li>
-                    <li class="best-sellers__list__item__price">100$</li>
+                    <li class="best-sellers__list__item__price">$299,43</li>
                   </ul>
                 </div>
 
@@ -181,7 +182,7 @@ const homepage = () => {
                           <div class="star"></div>
                           <div class="star star--5"></div>
                       </li>
-                      <li class="best-sellers__list__item__price">100$</li>
+                      <li class="best-sellers__list__item__price">$299,43</li>
                     </ul>
                 </div>
           </div>
@@ -193,6 +194,7 @@ const homepage = () => {
       
       <!---------------------------- WHY CHOOSE US ----------------------------------------->
       <div class="why-choose-us">
+         <div></div>
             <h3>WHY CHOOSE US ?</h3>
             <div class="why-choose-us__reasons">
             <div class="why-choose-us__reason">

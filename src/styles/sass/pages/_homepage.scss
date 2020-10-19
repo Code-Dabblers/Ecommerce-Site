@@ -1,24 +1,30 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
 
 #router {
   padding-top: 12vh;
 }
 
 .homepage__main {
-  height: 40vh;
+  height: 30vh;
   position: relative;
 
   @include respond(tablet){
-    height: 60vh;
+    height: 42vh;
+  }
+
+  @include respond(laptop){
+    height: 50vh;
+  }
+
+  @include respond(desktop){
+    height: 64vh;
   }
 
   @include respond(large-desktop){
-    height: 88vh;
+    height: 80vh;
     margin: 50px auto;
   }
 
-  @include respond(large-desktop){
+  @include respond(huge-desktop){
     height: 94vh;
     margin: 50px auto;
   }
@@ -31,7 +37,7 @@
       height: 90%;
     }
     img {
-      @include widthHeight(93%, 70%);
+      @include widthHeight(93%, null);
       display: block;
       margin: auto;
       border-radius: $px7ToRem;
@@ -46,7 +52,7 @@
     position: absolute;
     display: inline;
     color: $white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     top: 50%;
     left: 10%;
     width: 50%;
@@ -410,6 +416,7 @@
 
     @include respond(huge-desktop){
       margin-left: 40px;
+      width: 50%;
     }
   }
 
@@ -431,13 +438,19 @@
     width: 90%;
     margin: auto;
     border-radius: $px10ToRem;
+    padding: 20px;
     p {
       font-family: "Arial Narrow", Arial, sans-serif;
       font-size: 2.2rem;
-      padding: 20px;
       color: rgb(160, 159, 159);
       line-height: 1.5;
       text-align: inherit;
+
+      span{
+        color: $black;
+        padding-top: 20px;
+        display: block;
+      }
 
       @include respond(tablet){
         font-size: 2.5rem;

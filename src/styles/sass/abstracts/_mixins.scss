@@ -9,7 +9,7 @@
   height: $height;
 }
 
-@mixin container($maxWidth, $margin:null) {
+@mixin container($maxWidth) {
   max-width: $maxWidth;
   margin: 0 auto;
 }

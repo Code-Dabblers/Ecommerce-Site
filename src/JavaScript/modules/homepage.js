@@ -16,9 +16,9 @@ const homepage = () => {
   const testimonialImage = require("../../assets/landing-page/bg-shapes.svg");
   const girl = require("../../assets/landing-page/girl.png");
   return html`
-    <div class="homepage">
+    <main class="homepage">
       <!---------------------------- MAIN ------------------------------------------------>
-      <main class="homepage__wrapper">
+      <div class="homepage__wrapper">
         <section class="homepage__main">
           <div class="homepage__main__img-wrapper">
             <img src="${heroImage.default}" alt="main-banner-shoe" />
@@ -243,8 +243,8 @@ const homepage = () => {
             <div class="testimonials__p-wrapper">
               <p class="testimonials__p">
               Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage.
+              <span>Gita Savitri</span>
               </p>
-              <div>Gita Savitri</div>
             </div>
             <div class="testimonials__arrows">
                 <i class="fa fa-long-arrow-alt-left arrow-left active-arrow"></i>
@@ -252,8 +252,8 @@ const homepage = () => {
             </div>
         </div>
       </section>
-    </main>
     </div>
+    </main>
   `;
 };
 

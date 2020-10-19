@@ -31,10 +31,17 @@ PS: This was just to run the project on the local machine, if you want to contri
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/muchirijane">
+            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
+            <br />
+            <sub><b>Jane Tracy Muthoni</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/hajarNasr">
             <img src="https://avatars0.githubusercontent.com/u/43115763?v=4" width="100;" alt="hajarNasr"/>
             <br />
-            <sub><b>hajarNasr</b></sub>
+            <sub><b>HajarNasr</b></sub>
         </a>
     </td>
     <td align="center">
@@ -49,13 +56,6 @@ PS: This was just to run the project on the local machine, if you want to contri
             <img src="https://avatars3.githubusercontent.com/u/66133955?v=4" width="100;" alt="itworks-karen"/>
             <br />
             <sub><b>Karen</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/muchirijane">
-            <img src="https://avatars3.githubusercontent.com/u/54930887?v=4" width="100;" alt="muchirijane"/>
-            <br />
-            <sub><b>Jane Tracy Muthoni</b></sub>
         </a>
     </td>
     <td align="center">

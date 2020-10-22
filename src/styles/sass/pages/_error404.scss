@@ -41,7 +41,7 @@
             @include flexMixin(center, center);
             @include widthHeight(26.5rem, 6.125rem);
 
-            background: $light-purple; // Changed the variable color from $light-purple-1, it won't compile since the variable is not declared on the _variable.scss
+            background: $light-purple;
             border-radius: 0.3125rem;
             color: $white;
             font-size: 2.25rem;

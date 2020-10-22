@@ -2,99 +2,99 @@
 @import "../abstracts/mixins";
 
 .footer {
-  @include paddingTopBottom;
-  min-height: 70vh;
-  background: #dcd8f3c4;
-  line-height: 1.8;
-  @include respond(tablet){
-    min-height: 40vh;
-  }
-  @include respond(desktop){
-    min-height: 28vh;
-  }
-  p {
-    color: gray;
-    font-size: 1.7rem;
-  }
-  h2 {
-    font-size: 2rem;
-    color: $dark-blue;
-  }
+    @include paddingTopBottom;
+    min-height: 70vh;
+    background: #dcd8f3c4;
+    line-height: 1.8;
+    @include respond(tablet) {
+        min-height: 40vh;
+    }
+    @include respond(desktop) {
+        min-height: 28vh;
+    }
+    p {
+        color: gray;
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+        color: $dark-blue;
+    }
 }
 
 .footer__list {
-  @include flexMixin(space-evenly, null, column);
-  width: 80%;
-  min-height: 70vh;
-  margin: auto;
-  @include respond(tablet){
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    min-height: 40vh;
-    width: 90%;
-    padding: 3rem 0rem;
-  }
-  @include respond(desktop){
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 85%;
-    min-height: 28vh;
-    padding: 2rem 0rem;
-  }
+    @include flexMixin(space-evenly, null, column);
+    width: 80%;
+    min-height: 70vh;
+    margin: auto;
+    @include respond(tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        min-height: 40vh;
+        width: 90%;
+        padding: 3rem 0rem;
+    }
+    @include respond(desktop) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 85%;
+        min-height: 28vh;
+        padding: 2rem 0rem;
+    }
 
-  &__item__brand {
-    @include flexMixin;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    @include respond(tablet){
-      grid-row: 1 / span 2;
+    &__item__brand {
+        @include flexMixin;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include respond(tablet) {
+            grid-row: 1 / span 2;
+        }
+        h2 {
+            padding: 0.31rem;
+            padding-left: 1rem;
+        }
     }
-    h2 {
-      padding: $px5ToRem;
-      padding-left: 1rem;
-    }
-  }
 
-  &__item {
-    @include paddingTopBottom($px10ToRem, $px10ToRem);
-    @include respond(tablet){
-      padding: 1rem 2.5rem;
-    }
-    @include respond(desktop){
-      max-width: 33.3%;
-      padding: 1.5rem;
-    }
-    &:nth-child(2){
-      p{
-        max-width: 70%;
-        @include respond(tablet){
-          max-width: 100%;
+    &__item {
+        @include paddingTopBottom(0.63rem, 0.63rem);
+        @include respond(tablet) {
+            padding: 1rem 2.5rem;
         }
-        @include respond(desktop){
-          max-width: 100%;
+        @include respond(desktop) {
+            max-width: 33.3%;
+            padding: 1.5rem;
         }
-      }
+        &:nth-child(2) {
+            p {
+                max-width: 70%;
+                @include respond(tablet) {
+                    max-width: 100%;
+                }
+                @include respond(desktop) {
+                    max-width: 100%;
+                }
+            }
+        }
     }
-  }
 }
 
 .social-icon--reduce-size {
-  @include widthHeight(75px, 30px);
-  margin-top: 1.8rem;
+    @include widthHeight(75px, 30px);
+    margin-top: 1.8rem;
 }
 
 .fab {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 .fa-facebook-f {
-  color: #583564;
-  margin-left: 10px;
-  padding-top: 1.8rem;
+    color: #583564;
+    margin-left: 10px;
+    padding-top: 1.8rem;
 }
 
 .fa-twitter {
-  color: #b1a2f0;
+    color: #b1a2f0;
 }

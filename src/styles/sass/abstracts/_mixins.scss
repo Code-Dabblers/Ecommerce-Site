@@ -1,82 +1,80 @@
 // Homepage and Header mixins
-@mixin paddingTopBottom($top: $px20ToRem, $bottom: $px20ToRem) {
-  padding-top: $top;
-  padding-bottom: $bottom;
+@mixin paddingTopBottom($top: 1.25rem, $bottom: 1.25rem) {
+    padding-top: $top;
+    padding-bottom: $bottom;
 }
 
 @mixin widthHeight($width, $height) {
-  width: $width;
-  height: $height;
+    width: $width;
+    height: $height;
 }
 
 @mixin container($maxWidth) {
-  max-width: $maxWidth;
-  margin: 0 auto;
+    max-width: $maxWidth;
+    margin: 0 auto;
 }
 
 @mixin flexMixin($justifyContent: null, $alignItems: null, $columDir: null) {
-  display: flex;
-  @if ($columDir) {
-    flex-direction: column;
-  }
-  @if ($justifyContent) {
-    justify-content: $justifyContent;
-  }
-  @if ($alignItems) {
-    align-items: $alignItems;
-  }
+    display: flex;
+    @if ($columDir) {
+        flex-direction: column;
+    }
+    @if ($justifyContent) {
+        justify-content: $justifyContent;
+    }
+    @if ($alignItems) {
+        align-items: $alignItems;
+    }
 }
 
 @mixin centered($justifyContent: null, $alignItems: null, $row: null) {
-  display: flex;
-  @if ($row) {
-    flex-direction: row;
-  } 
-  @if ($justifyContent) {
-    justify-content: $justifyContent;
-  }
-  @if ($alignItems) {
-    align-items: $alignItems;
-  }
+    display: flex;
+    @if ($row) {
+        flex-direction: row;
+    }
+    @if ($justifyContent) {
+        justify-content: $justifyContent;
+    }
+    @if ($alignItems) {
+        align-items: $alignItems;
+    }
 }
-
 
 // MEDIA QUERIES
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == tablet {
-    @media only screen and (min-width: 43.75em) {
-      // 700px
-      @content;
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 43.75em) {
+            // 700px
+            @content;
+        }
     }
-  }
 
-  @if $breakpoint == laptop {
-    @media only screen and (min-width: 56.25em) {
-      // 900px
-      @content;
+    @if $breakpoint == laptop {
+        @media only screen and (min-width: 56.25em) {
+            // 900px
+            @content;
+        }
     }
-  }
 
-  @if $breakpoint == desktop {
-    @media only screen and (min-width: 75em) {
-      // 1200px
-      @content;
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 75em) {
+            // 1200px
+            @content;
+        }
     }
-  }
 
-  @if $breakpoint == large-desktop {
-    @media only screen and (min-width: 90em) {
-      // 1440px
-      @content;
+    @if $breakpoint == large-desktop {
+        @media only screen and (min-width: 90em) {
+            // 1440px
+            @content;
+        }
     }
-  }
 
-  @if $breakpoint == huge-desktop {
-    @media only screen and (min-width: 98.75em) {
-      // 15800px
-      @content;
+    @if $breakpoint == huge-desktop {
+        @media only screen and (min-width: 98.75em) {
+            // 15800px
+            @content;
+        }
     }
-  }
 }
-

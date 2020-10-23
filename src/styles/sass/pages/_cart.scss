@@ -4,30 +4,25 @@
 
 .cartHeader__mobile {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    border-bottom: 0.2rem solid $light-blue;
+    margin: 0 auto;
     h3 {
-        justify-content: flex-end;
-        margin-left: 1.8rem;
-        margin-right: 1.8rem;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
         font-family: "Poppins", sans-serif;
         font-weight: 900;
         line-height: 1.7;
-        font-size: 20px;
+        font-size: 2.5rem;
         color: $dark-blue-2;
-        margin-top: 3vh;
-        padding-bottom: 0.9rem;
-        border-bottom: 0.1rem solid $light-blue;
-        width: 100%;
 
         @include respond(tablet) {
             visibility: visible;
             display: flex;
             justify-content: flex-start;
-            margin-top: 5vh;
-            margin-left: 3rem;
-            margin-right: 3rem;
-            font-size: 25px;
+            margin-top: 3.5rem;
+
+            font-size: 3rem;
         }
 
         @include respond(laptop) {
@@ -66,28 +61,36 @@
         @include respond(tablet) {
             visibility: hidden;
             display: none;
+            @include container(1200px);
         }
 
         @include respond(laptop) {
             visibility: visible;
             display: flex;
-            padding-right: 1rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
         }
 
         @include respond(desktop) {
             visibility: visible;
             display: flex;
             flex-direction: row;
+            margin-left: 5rem;
+            margin-right: 5rem;
         }
 
         @include respond(large-desktop) {
             visibility: visible;
             display: flex;
+            margin-left: 5rem;
+            margin-right: 5rem;
         }
 
         @include respond(huge-desktop) {
             visibility: visible;
             display: flex;
+            margin-left: 5.5rem;
+            margin-right: 5.5rem;
         }
 
         .cartHeader-left {
@@ -101,13 +104,25 @@
             @include respond(laptop) {
                 visibility: visible;
                 display: flex;
-                padding-right: 35rem;
+                padding-right: 24.5rem;
             }
             @include respond(desktop) {
                 visibility: visible;
                 display: flex;
                 flex-direction: row;
-                padding-right: 49.5rem;
+                padding-right: 35rem;
+            }
+
+            @include respond(large-desktop) {
+                visibility: visible;
+                display: flex;
+                padding-right: 40rem;
+            }
+
+            @include respond(huge-desktop) {
+                visibility: visible;
+                display: flex;
+                padding-right: 45rem;
             }
         }
         .cartHeader-centered-right {
@@ -121,7 +136,8 @@
             @include respond(laptop) {
                 visibility: visible;
                 display: flex;
-                padding-right: 5rem;
+                padding-left: 11rem;
+                padding-right: 2.5rem;
             }
         }
         .cartHeader-right {
@@ -146,26 +162,44 @@
             display: flex;
             font-size: 15px;
         }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            font-size: 2.2rem;
+        }
+
+        @include respond(large-desktop) {
+            font-size: 2.5rem;
+        }
+
+        @include respond(huge-desktop) {
+            font-size: 2.7rem;
+        }
     }
 }
 
 .item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+    padding: 2rem;
+
     .item__mobile {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
         flex-direction: row;
-        flex-basis: 10rem;
+        margin: 0 auto;
         border: 0.1rem solid $light-blue;
         border-radius: 1rem;
-        margin: 2rem;
-        flex: 25;
-        visibility: visible;
 
-        @include respond(tablet) {
+        /* @include respond(tablet) {
             visibility: visible;
             display: flex;
             margin: 3rem;
-        }
+        }*/
 
         .img-wrapper img {
             height: 8rem;
@@ -401,7 +435,6 @@
         flex-direction: row;
         visibility: hidden;
         display: none;
-
         border-bottom: 0.2rem solid $light-blue;
         padding-bottom: 5rem;
         margin-top: 3rem;
@@ -412,26 +445,28 @@
         @include respond(tablet) {
             visibility: hidden;
             display: none;
+            @include container(1200px);
         }
 
         @include respond(laptop) {
             visibility: visible;
             display: flex;
+            @include container(1200px);
+            // margin-left: 5rem;
+            // margin-right: 5rem;
         }
 
         @include respond(desktop) {
             visibility: visible;
             display: flex;
+            // margin-left: 5rem;
+            // margin-right: 5rem;
         }
 
         @include respond(large-desktop) {
-            visibility: visible;
-            display: flex;
         }
 
         @include respond(huge-desktop) {
-            visibility: visible;
-            display: flex;
         }
         .item__desktop__details {
             padding: 5rem 5.6rem;
@@ -444,23 +479,25 @@
             @include respond(laptop) {
                 visibility: visible;
                 display: flex;
-                padding: 5rem 2.5rem;
+                padding: 5rem 1.3rem;
             }
 
             @include respond(desktop) {
                 visibility: visible;
                 display: flex;
-                padding: 5rem 5rem;
+                padding: 5rem 2.5rem;
             }
 
             @include respond(large-desktop) {
                 visibility: visible;
                 display: flex;
+                padding: 5rem 3.1rem;
             }
 
             @include respond(huge-desktop) {
                 visibility: visible;
                 display: flex;
+                padding: 5rem 3.3rem;
             }
 
             h3 {
@@ -474,158 +511,222 @@
                     display: flex;
                     font-size: 1.2rem;
                 }
+
+                @include respond(desktop) {
+                    font-size: 1.7rem;
+                }
+
+                @include respond(large-desktop) {
+                    font-size: 1.9rem;
+                }
+
+                @include respond(huge-desktop) {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+
+    .item__desktop__img-wrapper {
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        @include respond(laptop) {
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        }
+
+        @include respond(large-desktop) {
+            padding-left: 4.5rem;
+            padding-right: 5rem;
+        }
+
+        @include respond(huge-desktop) {
+            padding-left: 4.5rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .item__desktop__img-wrapper img {
+        height: 15rem;
+        width: 17rem;
+        border-radius: 2.5rem;
+
+        @include respond(laptop) {
+            height: 10rem;
+            width: 12rem;
+        }
+
+        @include respond(large-desktop) {
+            height: 13.5rem;
+            width: 15.5rem;
+        }
+
+        @include respond(huge-desktop) {
+            height: 15.5rem;
+            width: 17.5rem;
+        }
+    }
+
+    .item__icons {
+        padding: 5rem 4.5rem;
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+            padding-top: 4.3rem;
+            padding-bottom: 4.3rem;
+            padding-left: 3.5rem;
+            padding-right: 4rem;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-left: 4.1rem;
+            padding-right: 3.1rem;
+        }
+
+        @include respond(large-desktop) {
+            visibility: visible;
+            display: flex;
+            padding-top: 5rem;
+            padding-bottom: 4rem;
+            padding-left: 4rem;
+            padding-right: 1rem;
+        }
+
+        /* .fa {
+            background-color: $light-red-1;
+            border: 1px solid $light-red-1;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include respond(tablet) {
+                visibility: hidden;
+                display: none;
             }
         }
 
-        .item__desktop__img-wrapper {
-            padding-left: 3rem;
-            padding-right: 3rem;
-        }
-
-        .item__desktop__img-wrapper img {
-            height: 15rem;
-            width: 17rem;
-            border-radius: 2.5rem;
-
-            @include respond(laptop) {
-                visibility: visible;
-                display: flex;
-                height: 12rem;
-                width: 15rem;
-            }
-        }
-
-        .item__icons {
-            padding: 5rem 4.5rem;
-
-            @include respond(laptop) {
-                visibility: visible;
-                display: flex;
-                padding-top: 4.3rem;
-                padding-bottom: 4.3rem;
-                padding-left: 3.5rem;
-                padding-right: 3rem;
-            }
-
+        .fa-times-thin {
             @include respond(desktop) {
                 visibility: visible;
                 display: flex;
-                padding: 5rem 4.1rem;
+                font-size: 2.5rem;
             }
 
             @include respond(large-desktop) {
                 visibility: visible;
                 display: flex;
+                font-size: 2.5rem;
             }
 
             @include respond(huge-desktop) {
                 visibility: visible;
                 display: flex;
+                font-size: 2.8rem;
             }
+        }
+        // .fa-times-thin:before {
+        //     content: "\00d7";
+        //     color: $light-red;
+        // }*/
 
-            .fa {
-                background-color: $light-red-1;
-                border: 1px solid $light-red-1;
-                border-radius: 50%;
-                padding-left: 0.3rem;
-                padding-right: 0.4rem;
-                @include respond(tablet) {
-                    visibility: hidden;
-                    display: none;
-                }
+        form {
+            display: flex;
+            flex-wrap: wrap;
 
-                @include respond(laptop) {
-                    visibility: visible;
-                    display: flex;
-                }
-
-                @include respond(desktop) {
-                    visibility: visible;
-                    display: flex;
-                }
+            .item__icons form {
+                border: 0.2rem solid $light-blue;
+                border-radius: 1rem;
+            }
+            .minus {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.8rem;
+                color: $gray;
+                text-align: center;
+                background-color: $white;
+                border: 0.2rem solid $light-blue;
+                border-radius: 0.4rem;
 
                 @include respond(large-desktop) {
-                    visibility: visible;
-                    display: flex;
-                }
-
-                @include respond(huge-desktop) {
-                    visibility: visible;
-                    display: flex;
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2rem;
                 }
             }
-            .fa-times-thin:before {
-                content: "\00d7";
-                color: $light-red;
+
+            #quantity {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.8rem;
+                background-color: $light-blue;
+                color: $gray;
+                text-align: center;
+                background-color: $white;
+                border: 0.2rem solid $light-blue;
+                border-radius: 0.4rem;
+
+                @include respond(large-desktop) {
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2rem;
+                }
             }
 
-            form {
+            .plus {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.8rem;
+                color: $gray;
+                text-align: center;
+                background-color: $white;
+                border: 0.2rem solid $light-blue;
+                border-radius: 0.5rem;
+
+                @include respond(large-desktop) {
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2rem;
+                }
+            }
+
+            #quantity {
+                background-color: $light-blue;
+                border-color: 0.3rem solid pink;
+            }
+            /* Chrome, Safari, Edge, Opera */
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+
+            @include respond(laptop) {
+                visibility: visible;
                 display: flex;
-                flex-wrap: wrap;
-                .item__icons form {
-                    border: 0.1rem solid $light-blue;
-                    border-radius: 1rem;
-                }
-                .minus {
-                    width: 3rem;
-                    height: 3rem;
-                    font-size: 1.8rem;
-                    color: $gray;
-                    text-align: center;
-                    background-color: $white;
-                    border: 0.2rem solid $light-blue;
-                    border-radius: 0.4rem;
-                }
-
-                #quantity {
-                    width: 3rem;
-                    height: 3rem;
-                    font-size: 1.8rem;
-                    background-color: $light-blue;
-                    color: $gray;
-                    text-align: center;
-                    background-color: $white;
-                    border: 0.2rem solid $light-blue;
-                    border-radius: 0.4rem;
-                }
-
-                .plus {
-                    width: 3rem;
-                    height: 3rem;
-                    font-size: 1.8rem;
-                    color: $gray;
-                    text-align: center;
-                    background-color: $white;
-                    border: 0.2rem solid $light-blue;
-                    border-radius: 0.5rem;
-                }
-
-                #quantity {
-                    background-color: $light-blue;
-                    border-color: 0.3rem solid pink;
-                }
-                /* Chrome, Safari, Edge, Opera */
-                input::-webkit-outer-spin-button,
-                input::-webkit-inner-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
-                }
-
-                /* Firefox */
-                input[type="number"] {
-                    -moz-appearance: textfield;
-                }
-
-                @include respond(laptop) {
-                    visibility: visible;
-                    display: flex;
-                    padding-left: 2.8rem;
-                    padding-right: 3.5rem;
-                }
+                padding-left: 6rem;
+                padding-right: 3.5rem;
+            }
+            @include respond(large-desktop) {
+                padding-left: 4rem;
+                padding-right: 3rem;
             }
         }
     }
 }
+
 .checkout__container {
     border: 0.1rem solid $light-blue;
     border-radius: 1rem;
@@ -639,9 +740,17 @@
 
     @include respond(tablet) {
         visibility: visible;
-
         margin: 3rem;
         padding: 3rem;
+    }
+
+    @include respond(laptop) {
+        visibility: visible;
+        display: flex;
+        border: none;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        justify-content: center;
     }
 
     .checkout__container__mobile {
@@ -654,6 +763,10 @@
             display: flex;
         }
 
+        @include respond(laptop) {
+            visibility: hidden;
+            display: none;
+        }
         @include respond(desktop) {
             visibility: hidden;
             display: none;
@@ -673,6 +786,11 @@
                 justify-content: center;
             }
 
+            @include respond(laptop) {
+                visibility: hidden;
+                display: none;
+            }
+
             .checkout-col-1 {
                 justify-content: flex-start;
                 flex-basis: 27rem;
@@ -682,10 +800,13 @@
                     justify-content: flex-start;
                     flex-direction: column;
                     flex-basis: 70rem;
-
                     padding-right: 30vw;
                 }
 
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
                 li {
                     font-family: "Poppins", sans-serif;
                     font-size: 1.3rem;
@@ -717,6 +838,10 @@
 
                         padding-left: 20vw;
                     }
+                    @include respond(laptop) {
+                        visibility: hidden;
+                        display: none;
+                    }
                 }
             }
         }
@@ -732,6 +857,11 @@
                 display: flex;
             }
 
+            @include respond(laptop) {
+                visibility: hidden;
+                display: none;
+            }
+
             .checkout-col-3 {
                 justify-content: flex-start;
                 flex-basis: 27rem;
@@ -744,6 +874,11 @@
                     margin-left: rem;
                 }
 
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
+
                 li {
                     font-family: "Poppins", sans-serif;
                     font-size: 1.3rem;
@@ -752,6 +887,10 @@
 
                     @include respond(tablet) {
                         font-size: 1.8rem;
+                    }
+                    @include respond(laptop) {
+                        visibility: hidden;
+                        display: none;
                     }
                 }
 
@@ -765,6 +904,10 @@
                     @include respond(tablet) {
                         font-size: 1.8rem;
                     }
+                    @include respond(laptop) {
+                        visibility: hidden;
+                        display: none;
+                    }
                 }
             }
 
@@ -772,6 +915,10 @@
                 justify-content: flex-end;
                 text-align: right;
                 padding-left: 8rem;
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
             }
 
             #amtTotal {
@@ -784,13 +931,202 @@
                 @include respond(tablet) {
                     font-size: 1.8rem;
                 }
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
             }
         }
     }
 
     .checkout__container__desktop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         visibility: hidden;
         display: none;
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(large-desktop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(huge-desktop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        .checkout__container__desktop-top {
+            border-bottom: 0.2rem solid $light-blue;
+            padding-bottom: 1rem;
+
+            @include respond(laptop) {
+                visibility: visible;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .checkout__section__desktop-1 {
+                justify-content: flex-start;
+                flex-direction: column;
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+
+                    @include respond(laptop) {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    @include respond(desktop) {
+                        font-size: 1.8rem;
+                        font-weight: 450;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 2rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+
+            .checkout__section__desktop-2 {
+                display: flex;
+                flex-direction: column;
+
+                @include respond(laptop) {
+                    visibility: visible;
+                }
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+                    justify-content: flex-end;
+                    display: flex;
+
+                    @include respond(laptop) {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    @include respond(desktop) {
+                        font-size: 1.8rem;
+                        font-weight: 450;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 2rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+        }
+
+        .checkout__container__desktop-bottom {
+            visibility: visible;
+            display: flex;
+            flex-basis: 70;
+            padding-top: 1rem;
+            flex-direction: row;
+
+            .checkout__section__desktop-3 {
+                justify-content: flex-start;
+                flex-basis: 35;
+                justify-content: space-between;
+
+                @include respond(laptop) {
+                    padding-right: 18.5rem;
+                }
+
+                @include respond(desktop) {
+                    padding-right: 22.5rem;
+                }
+
+                @include respond(large-desktop) {
+                    padding-right: 22.5rem;
+                }
+
+                @include respond(huge-desktop) {
+                    padding-right: 24.5rem;
+                }
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+
+                    @include respond(laptop) {
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(desktop) {
+                        visibility: visible;
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 3rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+
+            .checkout__section__desktop-4 {
+                display: flex;
+                flex-basis: 35;
+                justify-content: flex-end;
+
+                @include respond(laptop) {
+                    visibility: visible;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+                    justify-content: flex-end;
+                    display: flex;
+
+                    @include respond(laptop) {
+                        justify-content: flex-end;
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(desktop) {
+                        visibility: visible;
+                        font-size: 2.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 3rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -800,6 +1136,22 @@
 
     @include respond(tablet) {
         margin: 3.5rem 3rem;
+    }
+
+    @include respond(laptop) {
+        margin: 3.5rem 5rem;
+    }
+
+    @include respond(desktop) {
+        margin: 3.5rem 5rem;
+    }
+
+    @include respond(large-desktop) {
+        margin: 3.5rem 5rem;
+    }
+
+    @include respond(huge-desktop) {
+        margin: 3.5rem 5.5rem;
     }
 
     .btn {

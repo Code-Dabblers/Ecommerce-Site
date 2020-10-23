@@ -9,10 +9,10 @@ const cart = () => {
         <h3>Your Cart</h3>
       </div>
       <ul>
-        <li class="cartHeader-left">Product</li>
-        <li class="cartHeader-centered-right">Price</li>
-        <li class="cartHeader-centered-right">Qty</li>
-        <li class="cartHeader-right">Unit Price</li>
+        <li class="cartHeader__nav-left">Product</li>
+        <li class="cartHeader__nav-right">Price</li>
+        <li class="cartHeader__nav-right">Qty</li>
+        <li class="cartHeader__nav-right">Unit Price</li>
       </ul>
     </div>
     
@@ -99,7 +99,7 @@ const cart = () => {
 
       <div class="item__desktop">
         <div class="item__icons">
-            <a href=""><i class="fa fa-times-thin fa-2x"></i></a>
+            <a href=""><i class="fas fa-times"></i></a>
         </div>
         <div class="item__desktop__details">
           <h3 class="itemName">Nike Air Zoom Pegasus 36 Miami</h3>
@@ -149,23 +149,23 @@ const cart = () => {
         </div>
 
         <div class="checkout__container__desktop">
-          <div class="checkout__container__desktop-1">
-            <ul class="checkout-col-1">
+          <div class="checkout__container__desktop-top">
+            <ul class="checkout__section__desktop-1">
               <li>Subtotal</li>
               <li>Shipping Fee</li>
             </ul>
-            <ul class="checkout-col-2">
+            <ul class="checkout__section__desktop-2">
               <li>$998.00</li>
               <li>$20.00</li>
             </ul>
           </div>
 
-          <div class="checkout__container__desktop-2">
-            <ul class="checkout-col-3">
-              <li id="total">Total</li>
+          <div class="checkout__container__desktop-bottom">
+            <ul class="checkout__section__desktop-3">
+              <li>Total</li>
             </ul>
-            <ul class="checkout-col-4">
-              <li id="amtTotal">$118.00</li>
+            <ul class="checkout__section__desktop-4">
+              <li>$118.00</li>
             </ul>
           </div>
         </div>

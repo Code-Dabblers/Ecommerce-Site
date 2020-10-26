@@ -3,6 +3,7 @@
 }
 
 .homepage__main {
+<<<<<<< HEAD
     margin: -5rem 0;
     position: relative;
 
@@ -166,6 +167,205 @@
         @include respond(desktop) {
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         }
+=======
+    height: 30vh;
+    position: relative;
+
+    @include respond(tablet) {
+        height: 42vh;
+    }
+
+    @include respond(laptop) {
+        height: 50vh;
+    }
+
+    @include respond(desktop) {
+        height: 64vh;
+    }
+
+    @include respond(large-desktop) {
+        height: 80vh;
+        margin: 50px auto;
+    }
+
+    @include respond(huge-desktop) {
+        height: 94vh;
+        margin: 50px auto;
+    }
+
+    &__img-wrapper {
+        @include widthHeight(100%, 100%);
+        @include flexMixin(center, center, column);
+
+        @include respond(large-desktop) {
+            height: 90%;
+        }
+        img {
+            @include widthHeight(93%, null);
+            display: block;
+            margin: auto;
+            border-radius: 0.44rem;
+
+            @include respond(large-desktop) {
+                height: 90%;
+            }
+        }
+    }
+
+    &-title {
+        position: absolute;
+        display: inline;
+        color: $white;
+        font-size: 2rem;
+        top: 50%;
+        left: 10%;
+        width: 50%;
+
+        @include respond(tablet) {
+            font-size: 3rem;
+            width: 40%;
+        }
+        @include respond(desktop) {
+            font-size: 3.5rem;
+        }
+
+        @include respond(large-desktop) {
+            top: 20%;
+            width: 30%;
+        }
+    }
+
+    &-sale {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        div {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        @include respond(large-desktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-card {
+            background-color: $white;
+            box-shadow: 0 5px 80px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                box-shadow: 0 6px 90px rgba(0, 0, 0, 0.18);
+                transform: scale(1.1);
+            }
+
+            &--title {
+                color: $dark-blue-2;
+                font-size: 2rem;
+                width: 70%;
+            }
+
+            &:hover {
+                background-color: $light-gray;
+            }
+
+            &--pic {
+                height: 220px;
+                width: 300px;
+            }
+
+            &--img {
+                height: 100%;
+                width: 100%;
+            }
+
+            &--text {
+                font-size: 16px;
+                &-1 {
+                    text-decoration-line: line-through;
+                    margin-right: 20px;
+                }
+                &-2 {
+                    color: $light-pink;
+                }
+            }
+
+            &--price {
+                font-size: 3rem;
+                text-align: end;
+                color: $purple;
+            }
+        }
+    }
+}
+
+.best-sellers {
+    @include container($maxWidth: 88%);
+    &__header {
+        @include flexMixin(space-between);
+        width: 95%;
+        margin: auto;
+        padding: 0.31rem;
+        font-size: 1.5rem;
+
+        @include respond(large-desktop) {
+            font-size: 6rem;
+            text-align: center;
+            display: inline-block;
+        }
+
+        h3 {
+            color: $dark-blue-2;
+        }
+        a {
+            color: $dark-purple;
+        }
+
+        &--link {
+            @include respond(large-desktop) {
+                display: none;
+            }
+        }
+    }
+
+    &__load {
+        display: none;
+        @include respond(large-desktop) {
+            display: block;
+            text-align: center;
+            padding: 60px 0;
+            &-link:link,
+            &-link:visited {
+                font-size: 2rem;
+                text-decoration: none;
+                color: $dark-purple;
+                border-bottom: 1px solid currentColor;
+            }
+        }
+    }
+    &__list {
+        @include paddingTopBottom;
+        display: grid;
+        grid-gap: 1.25rem;
+        grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+        @include respond(tablet) {
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+
+        @include respond(laptop) {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+
+        @include respond(desktop) {
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        }
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
         @include respond(large-desktop) {
             grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
         }
@@ -175,10 +375,17 @@
         }
 
         &__item {
+<<<<<<< HEAD
             min-height: $bestSellerItemHeight;
             min-width: 165px;
             border: 1px solid rgba(173, 216, 230, 0.658);
             border-radius: $px5ToRem;
+=======
+            min-height: 16.45rem;
+            min-width: 165px;
+            border: 1px solid rgba(173, 216, 230, 0.658);
+            border-radius: 0.31rem;
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
 
             &--5 {
                 display: none; //This too
@@ -215,8 +422,13 @@
                 @include widthHeight(100%, 100%);
                 display: block;
                 margin: auto;
+<<<<<<< HEAD
                 padding: $px7ToRem;
                 border-radius: $px10ToRem;
+=======
+                padding: 0.44rem;
+                border-radius: 0.63rem;
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
             }
             &__inner {
                 @include respond(laptop) {
@@ -226,11 +438,19 @@
             &__name {
                 color: $dark-blue;
                 font-size: 1.9rem;
+<<<<<<< HEAD
                 padding: $px5ToRem;
             }
             &__price {
                 color: $purple;
                 padding: $px5ToRem;
+=======
+                padding: 0.31rem;
+            }
+            &__price {
+                color: $purple;
+                padding: 0.31rem;
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
                 font-size: 1.9rem;
             }
             &__rating {
@@ -246,7 +466,11 @@
 }
 
 .star {
+<<<<<<< HEAD
     @include widthHeight(50px, 50px);
+=======
+    @include widthHeight(100px, 50px);
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
     transform: scale(0.5);
     background: $yellow-star;
     clip-path: polygon(
@@ -262,7 +486,11 @@
         39% 35%
     );
 }
+<<<<<<< HEAD
 .star--gray {
+=======
+.star--5 {
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
     background: $gray-star;
 }
 .why-choose-us {
@@ -295,7 +523,11 @@
     }
     &__reason {
         margin: 40px auto;
+<<<<<<< HEAD
         @include paddingTopBottom($px20ToRem, $px20ToRem);
+=======
+        @include paddingTopBottom(1.25rem, 1.25rem);
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
         @include respond(tablet) {
             &:not(:last-child) {
                 margin-right: 70px;
@@ -379,7 +611,11 @@
     h4 {
         color: $dark-blue;
         font-size: 2.5rem;
+<<<<<<< HEAD
         padding: $px10ToRem;
+=======
+        padding: 0.63rem;
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
         margin-left: 15px;
 
         @include respond(tablet) {
@@ -393,7 +629,11 @@
         background: $light-gray;
         width: 90%;
         margin: auto;
+<<<<<<< HEAD
         border-radius: $px10ToRem;
+=======
+        border-radius: 0.63rem;
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
         padding: 20px;
         p {
             font-family: "Arial Narrow", Arial, sans-serif;
@@ -422,7 +662,11 @@
         }
         div {
             font-size: large;
+<<<<<<< HEAD
             padding: $px10ToRem;
+=======
+            padding: 0.63rem;
+>>>>>>> 8acc96c5193214932c869d55a8dd8de99e166754
 
             @include respond(tablet) {
                 font-size: 2rem;

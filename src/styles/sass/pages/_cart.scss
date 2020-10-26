@@ -1,299 +1,1169 @@
-.cartHeadermobile {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  li {
-    justify-content: flex-end;
-    margin-left: 1.8rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    line-height: 1.7;
-    font-size: 20px;
-    color: $dark-blue-2;
-  }
-  margin-top: 0.5rem;
-  padding-bottom: 0.9rem;
-  border-bottom: 0.1rem solid $light-blue;
-  width: 100%;
+#router {
+    margin-top: 2vh;
+}
+
+.cartHeader__mobile {
+    display: flex;
+    border-bottom: 0.2rem solid $light-blue;
+    margin: 0 auto;
+    h3 {
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        line-height: 1.7;
+        font-size: 2.5rem;
+        color: $dark-blue-2;
+
+        @include respond(tablet) {
+            visibility: visible;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 3.5rem;
+
+            font-size: 3rem;
+        }
+
+        @include respond(laptop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(desktop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(large-desktop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(huge-desktop) {
+            visibility: hidden;
+            display: none;
+        }
+    }
 }
 
 .cartHeader {
-  /*Hidden for desktop*/
-  background: $white;
-  display: none;
+    background: $white;
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    visibility: hidden;
-  }
-
-  li {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-  @include respond(desktop) {
-    visibility: visible;
-  }
-}
-
-.item-box-1,
-.item-box-2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-basis: 10rem;
-  border: 0.1rem solid $light-blue;
-  border-radius: 1rem;
-  margin: 2rem;
-  flex: 25;
-
-  .img-wrapper img {
-    height: 8rem;
-    width: 9rem;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    flex: 5;
-  }
-
-  .item-details {
-    display: none;
-    /*Hidden for desktop*/
-    @include respond(desktop) {
-      visibility: visible;
-    }
     ul {
-      visibility: hidden;
-    }
-    .itemName h3 {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      line-height: 1.7;
-      font-size: 1rem;
-      color: $dark-blue-2;
-      visibility: hidden;
+        visibility: hidden;
+        display: none;
+        margin-top: 5vh;
+        border-bottom: 0.2rem solid $light-blue;
+        padding: 1.8rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        @include respond(tablet) {
+            visibility: hidden;
+            display: none;
+            @include container(1200px);
+        }
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+
+        @include respond(large-desktop) {
+            visibility: visible;
+            display: flex;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+
+        @include respond(huge-desktop) {
+            visibility: visible;
+            display: flex;
+            margin-left: 5.5rem;
+            margin-right: 5.5rem;
+        }
+
+        .cartHeader-left {
+            padding-left: 5rem;
+            padding-right: 53rem;
+            @include respond(tablet) {
+                visibility: hidden;
+                display: none;
+            }
+
+            @include respond(laptop) {
+                visibility: visible;
+                display: flex;
+                padding-right: 24.5rem;
+            }
+            @include respond(desktop) {
+                visibility: visible;
+                display: flex;
+                flex-direction: row;
+                padding-right: 35rem;
+            }
+
+            @include respond(large-desktop) {
+                visibility: visible;
+                display: flex;
+                padding-right: 40rem;
+            }
+
+            @include respond(huge-desktop) {
+                visibility: visible;
+                display: flex;
+                padding-right: 45rem;
+            }
+        }
+        .cartHeader-centered-right {
+            padding-left: 9.5rem;
+            padding-right: 8.5rem;
+            @include respond(tablet) {
+                visibility: hidden;
+                display: none;
+            }
+
+            @include respond(laptop) {
+                visibility: visible;
+                display: flex;
+                padding-left: 11rem;
+                padding-right: 2.5rem;
+            }
+        }
+        .cartHeader-right {
+            padding-left: 5rem;
+        }
     }
 
     li {
-      visibility: hidden;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        line-height: 1.7;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        @include respond(tablet) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+            font-size: 15px;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            font-size: 2.2rem;
+        }
+
+        @include respond(large-desktop) {
+            font-size: 2.5rem;
+        }
+
+        @include respond(huge-desktop) {
+            font-size: 2.7rem;
+        }
     }
-  }
 }
 
-.item-details-mobile {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  flex: 10;
+.item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+    padding: 2rem;
 
-  h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    line-height: 1.7;
-    font-size: 1.3rem;
-    color: $dark-blue-2;
-    padding-top: 0.5rem;
-    flex: 3.5;
-  }
+    .item__mobile {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 auto;
+        border: 0.1rem solid $light-blue;
+        border-radius: 1rem;
 
-  h5 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    line-height: 1.7;
-    font-size: 1rem;
-    color: $light-purple;
-    flex: 2;
-  }
+        /* @include respond(tablet) {
+            visibility: visible;
+            display: flex;
+            margin: 3rem;
+        }*/
+
+        .img-wrapper img {
+            height: 8rem;
+            width: 9rem;
+            border-radius: 1.5rem;
+            padding: 1rem;
+            flex: 5;
+
+            @include respond(tablet) {
+                visibility: visible;
+                display: flex;
+                height: 15rem;
+                width: 17rem;
+                padding: 2rem;
+            }
+        }
+
+        .item__mobile__details {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            flex: 10;
+
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+                line-height: 1.7;
+                font-size: 1.3rem;
+                color: $dark-blue-2;
+                padding-top: 0.5rem;
+                flex: 3.5;
+
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+                    padding-top: 1.7rem;
+                    font-size: 2rem;
+                }
+            }
+
+            h5 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 900;
+                line-height: 1.7;
+                font-size: 1rem;
+                color: $light-purple;
+                flex: 2;
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+                    padding-bottom: 1rem;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .item__icons__list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex: 6;
+            width: 5;
+
+            .item__icons1 {
+                flex: 0.3;
+                padding-right: 0.5rem;
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+
+                    padding-left: 6rem;
+                }
+                i {
+                    padding-top: 1.7rem;
+                    color: $dark-purple;
+                }
+            }
+
+            .item__icons1 i:hover {
+                color: #e15656;
+            }
+
+            .item__icons2 {
+                flex: 0.3;
+                padding-right: 0.5rem;
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+
+                    padding-left: rem;
+                }
+                i {
+                    padding-top: 1.7rem;
+                    color: $dark-purple;
+                }
+            }
+
+            .item__icons3 {
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+                    padding-right: 2rem;
+                }
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .item__icons3 form {
+                    border: 0.2rem solid $light-blue;
+                    border-radius: 1rem;
+                }
+                .minus {
+                    width: 3rem;
+                    height: 3rem;
+                    font-size: 1.8rem;
+                    color: $gray;
+                    text-align: center;
+                    background-color: $white;
+                    border: 0.2rem solid $light-blue;
+                    border-radius: 0.4rem;
+
+                    @include respond(tablet) {
+                        visibility: visible;
+                        display: flex;
+                        width: 4rem;
+                        height: 4rem;
+                        font-size: 3rem;
+                        color: $gray;
+                        text-align: center;
+                        background-color: $white;
+                        border: 0.3rem solid $light-blue;
+                        padding-left: 1rem;
+                    }
+                }
+                #quantity {
+                    width: 3rem;
+                    height: 3rem;
+                    font-size: 1.8rem;
+                    background-color: $light-blue;
+                    color: $gray;
+                    text-align: center;
+                    background-color: $white;
+                    border: 0.2rem solid $light-blue;
+                    border-radius: 0.4rem;
+
+                    @include respond(tablet) {
+                        visibility: visible;
+                        display: flex;
+                        width: 4rem;
+                        height: 4rem;
+                        font-size: 2 rem;
+                        color: $gray;
+                        text-align: center;
+                        background-color: $white;
+                        border: 0.3rem solid $light-blue;
+                    }
+                }
+                .plus {
+                    width: 3rem;
+                    height: 3rem;
+                    font-size: 1.8rem;
+                    color: $gray;
+                    text-align: center;
+                    background-color: $white;
+                    border: 0.2rem solid $light-blue;
+                    border-radius: 0.5rem;
+
+                    @include respond(tablet) {
+                        visibility: visible;
+                        display: flex;
+                        width: 4rem;
+                        height: 4rem;
+                        font-size: 3rem;
+                        color: $gray;
+                        text-align: center;
+                        background-color: $white;
+                        border: 0.3rem solid $light-blue;
+                        padding-left: 1rem;
+                    }
+                }
+
+                #quantity {
+                    background-color: $light-blue;
+                    border-color: 0.3rem solid pink;
+                }
+                /* Chrome, Safari, Edge, Opera */
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Firefox */
+                input[type="number"] {
+                    -moz-appearance: textfield;
+                }
+            }
+        }
+        @include respond(tablet) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(laptop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(desktop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(large-desktop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        @include respond(huge-desktop) {
+            visibility: hidden;
+            display: none;
+        }
+    }
+    .item__desktop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        visibility: hidden;
+        display: none;
+        border-bottom: 0.2rem solid $light-blue;
+        padding-bottom: 5rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        flex-basis: 25;
+
+        @include respond(tablet) {
+            visibility: hidden;
+            display: none;
+            @include container(1200px);
+        }
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+            @include container(1200px);
+            // margin-left: 5rem;
+            // margin-right: 5rem;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+            // margin-left: 5rem;
+            // margin-right: 5rem;
+        }
+
+        @include respond(large-desktop) {
+        }
+
+        @include respond(huge-desktop) {
+        }
+        .item__desktop__details {
+            padding: 5rem 5.6rem;
+
+            @include respond(tablet) {
+                visibility: hidden;
+                display: none;
+            }
+
+            @include respond(laptop) {
+                visibility: visible;
+                display: flex;
+                padding: 5rem 1.3rem;
+            }
+
+            @include respond(desktop) {
+                visibility: visible;
+                display: flex;
+                padding: 5rem 2.5rem;
+            }
+
+            @include respond(large-desktop) {
+                visibility: visible;
+                display: flex;
+                padding: 5rem 3.1rem;
+            }
+
+            @include respond(huge-desktop) {
+                visibility: visible;
+                display: flex;
+                padding: 5rem 3.3rem;
+            }
+
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.7;
+
+                @include respond(laptop) {
+                    visibility: visible;
+                    display: flex;
+                    font-size: 1.2rem;
+                }
+
+                @include respond(desktop) {
+                    font-size: 1.7rem;
+                }
+
+                @include respond(large-desktop) {
+                    font-size: 1.9rem;
+                }
+
+                @include respond(huge-desktop) {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+
+    .item__desktop__img-wrapper {
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        @include respond(laptop) {
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        }
+
+        @include respond(large-desktop) {
+            padding-left: 4.5rem;
+            padding-right: 5rem;
+        }
+
+        @include respond(huge-desktop) {
+            padding-left: 4.5rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .item__desktop__img-wrapper img {
+        height: 15rem;
+        width: 17rem;
+        border-radius: 2.5rem;
+
+        @include respond(laptop) {
+            height: 10rem;
+            width: 12rem;
+        }
+
+        @include respond(large-desktop) {
+            height: 13.5rem;
+            width: 15.5rem;
+        }
+
+        @include respond(huge-desktop) {
+            height: 15.5rem;
+            width: 17.5rem;
+        }
+    }
+
+    .item__icons {
+        padding: 5rem 4.5rem;
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+            padding-top: 4.3rem;
+            padding-bottom: 4.3rem;
+            padding-left: 3.5rem;
+            padding-right: 4rem;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-left: 4.1rem;
+            padding-right: 3.1rem;
+        }
+
+        @include respond(large-desktop) {
+            visibility: visible;
+            display: flex;
+            padding-top: 5rem;
+            padding-bottom: 4rem;
+            padding-left: 4rem;
+            padding-right: 1rem;
+        }
+
+        /* .fa {
+            background-color: $light-red-1;
+            border: 1px solid $light-red-1;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include respond(tablet) {
+                visibility: hidden;
+                display: none;
+            }
+        }
+
+        .fa-times-thin {
+            @include respond(desktop) {
+                visibility: visible;
+                display: flex;
+                font-size: 2.5rem;
+            }
+
+            @include respond(large-desktop) {
+                visibility: visible;
+                display: flex;
+                font-size: 2.5rem;
+            }
+
+            @include respond(huge-desktop) {
+                visibility: visible;
+                display: flex;
+                font-size: 2.8rem;
+            }
+        }
+        // .fa-times-thin:before {
+        //     content: "\00d7";
+        //     color: $light-red;
+        // }*/
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+            .item__icons form {
+                border: 0.2rem solid $light-blue;
+                border-radius: 1rem;
+            }
+            .minus {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.8rem;
+                color: $gray;
+                text-align: center;
+                background-color: $white;
+                border: 0.2rem solid $light-blue;
+                border-radius: 0.4rem;
+
+                @include respond(large-desktop) {
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2rem;
+                }
+            }
+
+            #quantity {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.8rem;
+                background-color: $light-blue;
+                color: $gray;
+                text-align: center;
+                background-color: $white;
+                border: 0.2rem solid $light-blue;
+                border-radius: 0.4rem;
+
+                @include respond(large-desktop) {
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2rem;
+                }
+            }
+
+            .plus {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.8rem;
+                color: $gray;
+                text-align: center;
+                background-color: $white;
+                border: 0.2rem solid $light-blue;
+                border-radius: 0.5rem;
+
+                @include respond(large-desktop) {
+                    width: 4rem;
+                    height: 4rem;
+                    font-size: 2rem;
+                }
+            }
+
+            #quantity {
+                background-color: $light-blue;
+                border-color: 0.3rem solid pink;
+            }
+            /* Chrome, Safari, Edge, Opera */
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+
+            @include respond(laptop) {
+                visibility: visible;
+                display: flex;
+                padding-left: 6rem;
+                padding-right: 3.5rem;
+            }
+            @include respond(large-desktop) {
+                padding-left: 4rem;
+                padding-right: 3rem;
+            }
+        }
+    }
 }
 
-.item-icons-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  flex: 6;
-  width: 5;
-
-  .item-icons-1 {
-    flex: 0.3;
-    padding-right: 0.5rem;
-    i {
-      padding-top: 1.3rem;
-      color: $dark-purple;
-    }
-  }
-
-  .items-icons-1 i:hover {
-    color: #e15656;
-  }
-
-  .item-icons-2 {
-    flex: 0.3;
-    padding-right: 0.5rem;
-    i {
-      padding-top: 1.3rem;
-      color: $dark-purple;
-    }
-  }
-
-  .item-icons-3 {
-    padding-right: 1rem;
+.checkout__container {
+    border: 0.1rem solid $light-blue;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 1.8rem;
     padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
-    form {
-      display: flex;
-      flex-wrap: wrap;
+    @include respond(tablet) {
+        visibility: visible;
+        margin: 3rem;
+        padding: 3rem;
     }
 
-    .item-icons-3 form {
-      border: 0.1rem solid $light-blue;
-      border-radius: 1rem;
-    }
-    .minus {
-      width: 3rem;
-      height: 3rem;
-      font-size: 1.8rem;
-      color: $gray;
-      text-align: center;
-      background-color: $white;
-      border: 0.2rem solid $light-blue;
-      border-radius: 0.4rem;
+    @include respond(laptop) {
+        visibility: visible;
+        display: flex;
+        border: none;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        justify-content: center;
     }
 
-    #quantity {
-      width: 3rem;
-      height: 3rem;
-      font-size: 1.8rem;
-      background-color: $light-blue;
-      color: $gray;
-      text-align: center;
-      background-color: $white;
-      border: 0.2rem solid $light-blue;
-      border-radius: 0.4rem;
+    .checkout__container__mobile {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        visibility: visible;
+        @include respond(tablet) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(laptop) {
+            visibility: hidden;
+            display: none;
+        }
+        @include respond(desktop) {
+            visibility: hidden;
+            display: none;
+        }
+
+        .checkout__container__mobile-1 {
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 0.4rem dashed $light-blue;
+            padding-top: 1rem;
+            width: inherit;
+
+            @include respond(tablet) {
+                visibility: visible;
+                display: flex;
+                justify-content: center;
+            }
+
+            @include respond(laptop) {
+                visibility: hidden;
+                display: none;
+            }
+
+            .checkout-col-1 {
+                justify-content: flex-start;
+                flex-basis: 27rem;
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    flex-basis: 70rem;
+                    padding-right: 30vw;
+                }
+
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    color: $dark-purple;
+                    padding-bottom: 1rem;
+
+                    @include respond(tablet) {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .checkout-col-2 {
+                justify-content: flex-end;
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    line-height: 1.7;
+                    color: $dark-blue;
+                    padding-bottom: 1.2rem;
+                    text-align: right;
+
+                    @include respond(tablet) {
+                        visibility: visible;
+                        display: flex;
+                        justify-content: flex-end;
+                        font-size: 1.8rem;
+
+                        padding-left: 20vw;
+                    }
+                    @include respond(laptop) {
+                        visibility: hidden;
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .checkout__container__mobile-2 {
+            visibility: visible;
+            display: flex;
+            flex-direction: row;
+            padding-top: 1rem;
+
+            @include respond(tablet) {
+                visibility: visible;
+                display: flex;
+            }
+
+            @include respond(laptop) {
+                visibility: hidden;
+                display: none;
+            }
+
+            .checkout-col-3 {
+                justify-content: flex-start;
+                flex-basis: 27rem;
+                @include respond(tablet) {
+                    visibility: visible;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    flex-basis: 60rem;
+                    margin-left: rem;
+                }
+
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    color: $dark-purple;
+
+                    @include respond(tablet) {
+                        font-size: 1.8rem;
+                    }
+                    @include respond(laptop) {
+                        visibility: hidden;
+                        display: none;
+                    }
+                }
+
+                #total {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 800;
+                    line-height: 1.7;
+                    color: $dark-blue;
+
+                    @include respond(tablet) {
+                        font-size: 1.8rem;
+                    }
+                    @include respond(laptop) {
+                        visibility: hidden;
+                        display: none;
+                    }
+                }
+            }
+
+            .checkout-col-4 {
+                justify-content: flex-end;
+                text-align: right;
+                padding-left: 8rem;
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+
+            #amtTotal {
+                font-family: "Poppins", sans-serif;
+                font-size: 1.3rem;
+                font-weight: 800;
+                line-height: 1.7;
+                color: $light-purple;
+
+                @include respond(tablet) {
+                    font-size: 1.8rem;
+                }
+                @include respond(laptop) {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+        }
     }
 
-    .plus {
-      width: 3rem;
-      height: 3rem;
-      font-size: 1.8rem;
-      color: $gray;
-      text-align: center;
-      background-color: $white;
-      border: 0.2rem solid $light-blue;
-      border-radius: 0.5rem;
+    .checkout__container__desktop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        visibility: hidden;
+        display: none;
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(desktop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(large-desktop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        @include respond(huge-desktop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        .checkout__container__desktop-top {
+            border-bottom: 0.2rem solid $light-blue;
+            padding-bottom: 1rem;
+
+            @include respond(laptop) {
+                visibility: visible;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .checkout__section__desktop-1 {
+                justify-content: flex-start;
+                flex-direction: column;
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+
+                    @include respond(laptop) {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    @include respond(desktop) {
+                        font-size: 1.8rem;
+                        font-weight: 450;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 2rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+
+            .checkout__section__desktop-2 {
+                display: flex;
+                flex-direction: column;
+
+                @include respond(laptop) {
+                    visibility: visible;
+                }
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+                    justify-content: flex-end;
+                    display: flex;
+
+                    @include respond(laptop) {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+
+                    @include respond(desktop) {
+                        font-size: 1.8rem;
+                        font-weight: 450;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 2rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+        }
+
+        .checkout__container__desktop-bottom {
+            visibility: visible;
+            display: flex;
+            flex-basis: 70;
+            padding-top: 1rem;
+            flex-direction: row;
+
+            .checkout__section__desktop-3 {
+                justify-content: flex-start;
+                flex-basis: 35;
+                justify-content: space-between;
+
+                @include respond(laptop) {
+                    padding-right: 18.5rem;
+                }
+
+                @include respond(desktop) {
+                    padding-right: 22.5rem;
+                }
+
+                @include respond(large-desktop) {
+                    padding-right: 22.5rem;
+                }
+
+                @include respond(huge-desktop) {
+                    padding-right: 24.5rem;
+                }
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+
+                    @include respond(laptop) {
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(desktop) {
+                        visibility: visible;
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 3rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+
+            .checkout__section__desktop-4 {
+                display: flex;
+                flex-basis: 35;
+                justify-content: flex-end;
+
+                @include respond(laptop) {
+                    visibility: visible;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                li {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.7;
+                    padding-bottom: 1rem;
+                    justify-content: flex-end;
+                    display: flex;
+
+                    @include respond(laptop) {
+                        justify-content: flex-end;
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(desktop) {
+                        visibility: visible;
+                        font-size: 2.8rem;
+                        font-weight: 550;
+                    }
+
+                    @include respond(large-desktop) {
+                        font-size: 3rem;
+                        font-weight: 450;
+                    }
+                }
+            }
+        }
     }
-
-    #quantity {
-      background-color: $light-blue;
-      border-color: 0.3rem solid pink;
-    }
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
-    /* Firefox */
-    input[type="number"] {
-      -moz-appearance: textfield;
-    }
-  }
-}
-.checkout-container {
-  border: 0.1rem solid $light-blue;
-  border-radius: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 1.8rem;
-  padding-bottom: 1.3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.checkout-container-1 {
-  visibility: hidden;
-  display: none;
-
-  @include respond(desktop) {
-    visibility: visible;
-  }
-}
-
-.checkout-container-2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  .checkout-1,
-  .checkout-3 {
-    justify-content: flex-start;
-    flex-basis: 27rem;
-
-    li {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.3rem;
-      line-height: 1.7;
-      color: $dark-purple;
-      padding-bottom: 1rem;
-    }
-  }
-
-  .checkout-3,
-  .checkout-4 {
-    border-top: 0.3rem dashed $light-blue;
-    padding-top: 1rem;
-  }
-
-  #total {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 800;
-    line-height: 1.7;
-    color: $dark-blue;
-  }
-
-  #amtTotal {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 800;
-    line-height: 1.7;
-    color: $light-purple;
-  }
-
-  .checkout-2,
-  .checkout-4 {
-    justify-content: flex-end;
-    li {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.3rem;
-      font-weight: 500;
-      line-height: 1.7;
-      color: $dark-blue;
-      padding-bottom: 1.2rem;
-      text-align: right;
-    }
-  }
 }
 
 .checkout-btn {
-  display: flex;
-  margin: 3.5rem 2rem;
+    display: flex;
+    margin: 3.5rem 2rem;
 
-  a {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 900;
-    line-height: 1.7;
-  }
+    @include respond(tablet) {
+        margin: 3.5rem 3rem;
+    }
+
+    @include respond(laptop) {
+        margin: 3.5rem 5rem;
+    }
+
+    @include respond(desktop) {
+        margin: 3.5rem 5rem;
+    }
+
+    @include respond(large-desktop) {
+        margin: 3.5rem 5rem;
+    }
+
+    @include respond(huge-desktop) {
+        margin: 3.5rem 5.5rem;
+    }
+
+    .btn {
+        border-radius: 1rem;
+    }
+    a {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 900;
+        line-height: 1.7;
+    }
 }
 .checkout-btn a:hover {
-  box-shadow: 0 5px 5px 0 #00000030;
+    box-shadow: 0 5px 5px 0 #00000030;
 }

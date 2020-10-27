@@ -211,48 +211,31 @@
         &__item {
             min-height: 16.45rem;
             min-width: 165px;
-            border: 1px solid rgba(173, 216, 230, 0.658);
-            border-radius: 0.31rem;
-
-            &--5 {
-                display: none; //This too
-                @include respond(tablet) {
-                    display: block;
-                }
-            }
-
-            &--6 {
-                display: none;
-                @include respond(tablet) {
-                    display: block;
-                }
-            }
-
-            &--7 {
-                display: none;
-                @include respond(large-desktop) {
-                    display: block;
-                }
-            }
-
-            &--8 {
-                display: none;
-                @include respond(large-desktop) {
-                    display: block;
-                }
-            }
+            padding: 3rem 2rem 1.5rem;
+            outline: 2px solid rgba($dark-blue, 0.2);
+            border-radius: 0.3rem;
+            margin: 1rem;
 
             &:hover {
-                border-width: 3px;
+                outline: 4px inset rgba($dark-blue, 0.2);
             }
+
+            &:hover img {
+                filter: brightness(105%);
+                transform: scale(1.02) translateY(-3px);
+            }
+
             img {
+                outline: 0px solid rgba($light-blue, 0.2);
                 @include widthHeight(100%, 100%);
                 display: block;
                 margin: auto;
                 padding: 0.44rem;
                 border-radius: 0.63rem;
+                transition: all 0.25s;
             }
             &__inner {
+                margin-top: 2rem;
                 @include respond(laptop) {
                     text-align: center;
                 }
@@ -280,7 +263,7 @@
 }
 
 .star {
-    @include widthHeight(100px, 50px);
+    @include widthHeight(50px, 50px);
     transform: scale(0.5);
     background: $yellow-star;
     clip-path: polygon(
@@ -296,9 +279,11 @@
         39% 35%
     );
 }
-.star--5 {
+
+.star--gray {
     background: $gray-star;
 }
+
 .why-choose-us {
     @include flexMixin(space-evenly, center, column);
     background-color: #dddddd77;
@@ -329,6 +314,7 @@
     }
     &__reason {
         margin: 40px auto;
+
         @include paddingTopBottom(1.25rem, 1.25rem);
         @include respond(tablet) {
             &:not(:last-child) {

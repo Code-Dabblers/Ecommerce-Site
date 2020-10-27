@@ -6,82 +6,106 @@ const shoes = [
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 4,
-        img: require("../../assets/landing-page/purse-2.png"),
+        img: require("../../assets/landing-page/purse-2.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 4,
-        img: require("../../assets/landing-page/purse-3.png"),
+        img: require("../../assets/landing-page/purse-3.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 5,
-        img: require("../../assets/landing-page/shoe-1.png"),
+        img: require("../../assets/landing-page/shoe-1.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 4,
-        img: require("../../assets/landing-page/shoe-2.png"),
+        img: require("../../assets/landing-page/shoe-2.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 4,
-        img: require("../../assets/landing-page/shoe-4.png"),
+        img: require("../../assets/landing-page/shoe-4.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 5,
-        img: require("../../assets/landing-page/shoe-5.png"),
+        img: require("../../assets/landing-page/shoe-5.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 4,
-        img: require("../../assets/landing-page/shoe-6.png"),
+        img: require("../../assets/landing-page/shoe-6.png").default,
     },
     {
         name: "Nike Air Max 270 React",
         price: 299.43,
         rating: 4,
-        img: require("../../assets/landing-page/shoe-7.png"),
+        img: require("../../assets/landing-page/shoe-7.png").default,
     },
 ];
 
 const ratingStarsGenerate = (item) => {
     const stars = item.rating;
-    return `
-        ${Array(stars).forEach((star) => {
-            return '<span class="star"></span>';
-        })}
-        ${Array(5 - stars).forEach((star) => {
-            return '<span class="star star--gray"></span>';
-        })}
-    `;
+    console.log(stars);
+    let starsHTML = "";
+
+    Array(stars)
+        .fill(null)
+        .forEach((star) => {
+            starsHTML += `<span class="star"></span>`;
+        });
+
+    Array(5 - stars)
+        .fill(null)
+        .forEach((star) => {
+            starsHTML += `<span class="star star--gray"></span>`;
+        });
+
+    //  (let i = 1; i <= 5; i++) {
+    //     if (stars >= i) {
+    //         starsHTML += `<span class="star"></span>`;
+    //     } else {
+    //         starsHTML += `<span class="star star--gray"></span>`;
+    //     }
+    // }
+    console.log(starsHTML);
+    console.log(starsHTML + "hey");
 };
 
-const generateProduct = (item) => {
-    return `
-        <div class="best-sellers__list__item">
-            <div>
-                <img src="${item.img}" alt="" />
-            </div>
-            <ul class="best-sellers__list__item__inner">
-                <li class="best-sellers__list__item__name">
-                    <a href="#">${item.name}</a>
-                </li>
-                <li class="best-sellers__list__item__rating">
-                    ${ratingStarsGenerate(item)}
-                </li>
-                <li class="best-sellers__list__item__price"></li>
-            </ul>
-        </div>
-    `;
-};
+// const generateProducts = () => {
+//     let productsHTML = "";
+
+//     const arr = shoes.map((item) => {
+//         return `
+//             <div class="best-sellers__list__item">
+//                 <div>
+//                     <img src="${item.img}" alt="" />
+//                 </div>
+//                 <ul class="best-sellers__list__item__inner">
+//                     <li class="best-sellers__list__item__name">
+//                         <a href="#">${item.name}</a>
+//                     </li>
+//                     <li class="best-sellers__list__item__rating">
+//                         ${ratingStarsGenerate(item)}
+//                     </li>
+//                     <li class="best-sellers__list__item__price"></li>
+//                 </ul>
+//             </div>
+//         `;
+//     });
+//     console.log(arr.join(""));
+//     const str = arr.join("");
+
+//     return html`${str}`;
+// };
 
 const homepage = () => {
     const mainBannaerShoe = require("../../assets/landing-page/main-banner-shoe-img.png");
@@ -127,7 +151,46 @@ const homepage = () => {
                     </div>
 
                     <div class="best-sellers__list">
-                        ${shoes.forEach((product) => generateProduct(product))}
+                        ${shoes.map((item) => {
+                            console.log(item);
+                            return html`
+                                <div class="best-sellers__list__item">
+                                    <div>
+                                        <img src="${item.img}" alt="" />
+                                    </div>
+                                    <ul class="best-sellers__list__item__inner">
+                                        <li
+                                            class="best-sellers__list__item__name"
+                                        >
+                                            <a href="#">${item.name}</a>
+                                        </li>
+                                        <li
+                                            class="best-sellers__list__item__rating"
+                                        >
+                                            ${Array(item.rating)
+                                                .fill(1)
+                                                .map((item) => {
+                                                    return html`<span
+                                                        class="star"
+                                                    ></span>`;
+                                                })}
+                                            ${Array(5 - item.rating)
+                                                .fill(1)
+                                                .map((item) => {
+                                                    return html`<span
+                                                        class="star star--gray"
+                                                    ></span>`;
+                                                })}
+                                        </li>
+                                        <li
+                                            class="best-sellers__list__item__price"
+                                        >
+                                            $${item.price}
+                                        </li>
+                                    </ul>
+                                </div>
+                            `;
+                        })}
                     </div>
 
                     <h3 class="best-sellers__load">
@@ -184,6 +247,7 @@ const homepage = () => {
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
+                                        > >
                                         <path
                                             d="M0 6.58138V21.0007H26.2785H52.5569V6.58138C52.5549 4.97379 51.9153 3.43264 50.7786 2.2959C49.6419 1.15917 48.1007 0.519645 46.4931 0.517578H6.06381C4.45622 0.519645 2.91507 1.15917 1.77833 2.2959C0.641595 3.43264 0.00206698 4.97379 0 6.58138ZM4.04254 6.58138C4.04332 6.04554 4.25652 5.53188 4.63541 5.15299C5.01431 4.77409 5.52797 4.56091 6.06381 4.56013H8.08508V16.9611H4.04254V6.58138ZM12.1286 4.56013H17.3556L26.2785 13.483L35.2014 4.56013H40.4254V16.9611H12.1286V4.56013ZM48.5144 6.58138V16.9582H44.4719V4.55718H46.4931C47.0295 4.55796 47.5436 4.77158 47.9226 5.15111C48.3015 5.53064 48.5144 6.04504 48.5144 6.58138ZM29.4842 4.56013L26.2785 7.76584L23.0728 4.56013H29.4842Z"
                                             fill="#D893D1"

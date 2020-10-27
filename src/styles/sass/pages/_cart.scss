@@ -1,13 +1,13 @@
 #router {
-    margin-top: 2vh;
+    padding-top: 12vh;
 }
 
 .cartHeader__mobile {
     display: flex;
-    border-bottom: 0.2rem solid $light-blue;
-    margin: 0 auto;
+    border-bottom: 0.3rem solid $light-blue;
+    margin: 4rem auto 0 auto;
     height: 100%;
-    max-height: 8rem;
+
     h3 {
         display: flex;
         justify-content: flex-start;
@@ -17,6 +17,10 @@
         line-height: 1.7;
         font-size: clamp(2rem, 4.5vw, 4.5rem);
         color: $dark-blue-2;
+
+        @include respond(tablet) {
+            padding-top: 4rem;
+        }
     }
 
     @include respond(laptop) {
@@ -32,17 +36,21 @@
         visibility: hidden;
         display: none;
         align-items: center;
-        padding: 1rem 5%;
+        padding: 1.5rem 5%;
         align-items: center;
         justify-content: center;
-        margin: 4rem auto;
-        height: 6rem;
+        margin: 7.5rem auto 2rem auto;
+        height: 100%;
         border-bottom: 0.3rem solid $light-blue;
         width: 100%;
 
         @include respond(laptop) {
             visibility: visible;
             display: flex;
+        }
+
+        @include respond(huge-desktop) {
+            margin: 9rem auto 2rem auto;
         }
     }
 
@@ -116,7 +124,7 @@
         display: flex;
         margin: 2rem auto;
         flex-direction: row;
-        border: 0.2rem solid $light-blue;
+        border: 0.3rem solid $light-blue;
         border-radius: 1rem;
 
         @include respond(laptop) {
@@ -232,7 +240,7 @@
                 }
 
                 .item__icons2 form {
-                    border: 0.2rem solid $light-blue;
+                    border: 0.3rem solid $light-blue;
                     border-radius: 1rem;
                     font-size: clamp(0.8rem, 3.3vw, 2rem);
                 }
@@ -243,7 +251,7 @@
                     color: $gray;
                     text-align: center;
                     background-color: $white;
-                    border: 0.2rem solid $light-blue;
+                    border: 0.3rem solid $light-blue;
                     border-radius: 0.4rem;
 
                     @include respond(tablet) {
@@ -259,7 +267,7 @@
                     color: $gray;
                     text-align: center;
                     background-color: $white;
-                    border: 0.2rem solid $light-blue;
+                    border: 0.3rem solid $light-blue;
                     border-radius: 0.4rem;
 
                     @include respond(tablet) {
@@ -274,7 +282,7 @@
                     color: $gray;
                     text-align: center;
                     background-color: $white;
-                    border: 0.2rem solid $light-blue;
+                    border: 0.3rem solid $light-blue;
                     border-radius: 0.5rem;
 
                     @include respond(tablet) {
@@ -304,7 +312,7 @@
 
     .checkout__container {
         margin: 2rem auto;
-        border: 0.2rem solid $light-blue;
+        border: 0.3rem solid $light-blue;
         border-radius: 1rem;
         width: 100%;
         max-width: 100%;

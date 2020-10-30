@@ -5,7 +5,7 @@
 .cartHeader__mobile {
     display: flex;
     border-bottom: 0.3rem solid $light-blue;
-    margin:  3rem auto;
+    margin: 3rem auto;
     height: 100%;
 
     h3 {
@@ -530,11 +530,8 @@
             }
         }
 
-        &__icon a:hover {
-            font-size: 1.3rem;
-            background-color: $light-red-1;
-            width: 3rem;
-            height: 3rem;
+        &__icon a:active {
+            transform: translate(2px);
         }
 
         .item__desktop__left {
@@ -589,6 +586,15 @@
             }
         }
 
+        .item__desktop__img-wrapper {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .item__desktop__right {
             visibility: hidden;
             display: none;
@@ -602,6 +608,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                align-items: center;
             }
 
             h3 {

@@ -480,6 +480,11 @@
         .item__desktop__img-wrapper {
             padding-left: 3rem;
             padding-right: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
         }
 
         .item__desktop__img-wrapper img {

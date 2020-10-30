@@ -37,16 +37,17 @@ const productList = () => {
     <i class="icon-filter"></i>
     </div>
     <p class="result-no">${shoe.length} Product Results</p>
-    
+    <div class = "wrapper">
     <div class="main-product-box" id="myUL">
     ${shoe.map((item)=>html`
     <ul>
     <img src='${shoeee}' />
     <li><a href="#">${item.name}</a></li>
-    <li class="star"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></li>
+    <li class="star"><i class="icon-star"></i></li>
     <li class="price"> Price : ${item.price}</li>
     </ul>
     `).splice(-10)}
+    </div>
     </div>
     
   `;

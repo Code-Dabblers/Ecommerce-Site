@@ -6,35 +6,77 @@
     position: fixed;
     top: 0;
     min-width: 290px;
-    min-height: 15vh;
     width: 100%;
     background: $light-gray;
     z-index: 9999999;
     border-bottom: 1px solid #d0d0d3a4;
-    padding: 1rem;
+    @include respond(laptop) {
+        padding-bottom: 0rem;
+    }
 }
 .header {
     &__logo {
         @include flexMixin(null, center);
-        font-size: clamp(1rem, 2vw, 1.8rem);
+        font-size: clamp(1rem, 1vw, 1.6rem);
         h1 {
             color: #9098b1;
-            padding: 5px;
-            margin-top: -5px;
+            padding-left: 0.5rem;
         }
     }
 
     &__top {
         @include flexMixin(space-between, center);
         width: 95%;
+        margin: 1rem auto;
+    }
+
+    .header__top-center {
+        visibility: hidden;
+        display: none;
+        background-color: white;
+        border: 1px solid #dedfe2;
+        // height: clamp(5vh, 3vh, 5vh);
+        width: 50%;
         margin: auto;
-        margin-top: 10px;
+        border-radius: 2rem;
+        justify-content: center;
+
+        li {
+            color: $light-purple;
+            padding: 0.5rem 1rem;
+        }
+
+        li:hover {
+            color: $purple;
+        }
+
+        li:active {
+            color: $purple;
+        }
+
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+        }
+    }
+
+    .header__top-center:hover {
+        border-color: $light-purple;
     }
 
     &__bottom {
         @include flexMixin(space-between, center);
         width: 95%;
         margin: auto;
+        padding-bottom: 2rem;
+
+        @include respond(laptop) {
+            height: 0;
+            display: none;
+            margin: 0;
+            visibility: hidden;
+            display: none;
+        }
 
         &_left {
             @include flexMixin(null, center, null);
@@ -44,14 +86,14 @@
             width: 57%;
             border-radius: 4px;
             padding-left: 5px;
-
-            @include respond(laptop) {
-                height: 3.8rem;
-            }
-
             li {
                 color: $purple;
                 padding: 0 0.5rem;
+            }
+
+            @include respond(laptop) {
+                visibility: hidden;
+                display: none;
             }
         }
 
@@ -71,12 +113,45 @@
             li:active {
                 color: $purple;
             }
+            @include respond(laptop) {
+                visibility: hidden;
+                display: none;
+            }
         }
     }
+
+    .header__icons-desktop {
+        visibility: hidden;
+        display: none;
+        margin: auto 0;
+        @include flexMixin(space-between, center);
+        width: 23%;
+        font-size: clamp(2.5rem, 2.1vw, 3.8rem);
+
+        li {
+            color: $dark-purple;
+        }
+
+        li:hover {
+            color: $light-purple;
+        }
+
+        li:active {
+            color: $purple;
+        }
+        @include respond(laptop) {
+            visibility: visible;
+            display: flex;
+        }
+
+        .user__icon {
+            font-size: clamp(2.7rem, 2.6vw, 4rem);
+        }
+    }
+
     &__user-icon {
         @include flexMixin(flex-end, center);
         flex: 0.75;
-        height: 30px;
         position: relative;
         width: 100%;
         cursor: pointer;
@@ -89,6 +164,11 @@
 
         li:active {
             color: $purple;
+        }
+
+        @include respond(laptop) {
+            visibility: hidden;
+            display: none;
         }
 
         /* COMMENTED THIS OUT AND USED FONT AWESOME ICONS
@@ -108,15 +188,28 @@
 
     &__search-form {
         @include flexMixin(space-between);
-        width: 80%;
+        width: 90%;
+        display: flex;
+        align-items: center;
         input {
             width: 100%;
             border: none;
             outline: none;
-            margin-left: 3px;
-            font-size: clamp(1.5rem, 1.8vw, 2rem);
+            font-size: clamp(1.5rem, 1vw, 2rem);
             opacity: 0.4;
+            padding: 0.8rem 0.6rem;
         }
+
+        @include respond(laptop) {
+            display: flex;
+            font-size: clamp(1.5rem, 1.6vw, 2.3rem);
+            padding: 0 1rem 0.3rem 1rem;
+        }
+    }
+    &__search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

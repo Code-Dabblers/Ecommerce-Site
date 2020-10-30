@@ -1,26 +1,23 @@
 #router {
-    padding-top: 12vh;
+    padding-top: 8vh;
 }
 
 .cartHeader__mobile {
     display: flex;
     border-bottom: 0.3rem solid $light-blue;
-    margin: 4rem auto 0 auto;
+    margin:  3rem auto;
     height: 100%;
 
     h3 {
         display: flex;
         justify-content: flex-start;
-        padding: 2rem;
+        padding: 1rem 1.5rem;
         font-family: "Poppins", sans-serif;
         font-weight: 900;
         line-height: 1.7;
         font-size: clamp(2rem, 4.5vw, 4.5rem);
         color: $dark-blue-2;
-
-        @include respond(tablet) {
-            padding-top: 4rem;
-        }
+        margin-top: 1.5rem;
     }
 
     @include respond(laptop) {
@@ -36,10 +33,10 @@
         visibility: hidden;
         display: none;
         align-items: center;
-        padding: 1.5rem 5%;
+        padding: 2rem 5%;
         align-items: center;
         justify-content: center;
-        margin: 7.5rem auto 2rem auto;
+        margin: auto auto 2rem auto;
         height: 100%;
         border-bottom: 0.3rem solid $light-blue;
         width: 100%;
@@ -50,7 +47,8 @@
         }
 
         @include respond(huge-desktop) {
-            margin: 9rem auto 2rem auto;
+            margin: auto;
+            padding-top: 3rem;
         }
     }
 
@@ -58,7 +56,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         line-height: 1.7;
-        font-size: clamp(2.3rem, 2vw, 4rem);
+        font-size: clamp(2.3rem, 1.5vw, 3rem);
         text-transform: uppercase;
     }
 
@@ -156,7 +154,7 @@
                 font-family: "Poppins", sans-serif;
                 font-weight: 900;
                 line-height: 1.7;
-                font-size: clamp(1rem, 3.3vw, 3.5rem);
+                font-size: clamp(1rem, 3vw, 2.5rem);
                 color: $dark-blue-2;
             }
 
@@ -164,7 +162,7 @@
                 font-family: "Poppins", sans-serif;
                 font-weight: 900;
                 line-height: 1.7;
-                font-size: clamp(1rem, 3.3vw, 3.5rem);
+                font-size: clamp(1rem, 3vw, 2.5rem);
                 color: $light-purple;
             }
         }
@@ -575,7 +573,7 @@
                 font-family: "Poppins", sans-serif;
                 font-weight: 300;
                 line-height: 1.7;
-                font-size: clamp(1rem, 2vw, 3.5rem);
+                font-size: clamp(1rem, 1.8vw, 3.3rem);
                 color: $purple;
                 justify-content: center;
                 text-align: center;
@@ -610,12 +608,36 @@
                 font-family: "Poppins", sans-serif;
                 font-weight: 300;
                 line-height: 1.7;
-                font-size: clamp(1rem, 2.5vw, 4.8rem);
+                font-size: clamp(1rem, 2vw, 4.5rem);
                 color: $black;
                 padding: 0 2rem;
                 justify-content: space-evenly;
             }
 
+            .quantity {
+                display: flex;
+                justify-content: center;
+            }
+
+            .quantity {
+                width: 40px;
+                height: 45px;
+
+                color: #000;
+                border-radius: 0;
+                background: #fff;
+            }
+
+            .quantity input {
+                border: none;
+                border-top: 1px solid $light-purple;
+                border-bottom: 1px solid $light-purple;
+                text-align: center;
+                width: 100px;
+                font-size: 20px;
+                color: #000;
+                font-weight: 300;
+            }
             form {
                 display: flex;
                 padding: 0 3rem;
